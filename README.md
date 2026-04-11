@@ -21,6 +21,9 @@
 > [!NOTE]  
 > Please don't abuse these services, else we might lose them for everyone.
 
+> [!WARNING]  
+> **April 2026 Model Tier Changes:** Major providers (OpenAI, Anthropic, Google) have restricted flagship models (GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro) to paid tiers. Free tiers now get lighter models (GPT-4o, Claude Sonnet/Haiku, Gemini Flash). Entries marked with `[verify]` need confirmation.
+
 ---
 
 ## 🎯 Why This Repo Exists
@@ -141,16 +144,15 @@ If this repo helped you build something or saved you money:
 | Tool | Pro-grade Models | Free Tier Limit | Credit Card |
 |------|------------------|-----------------|-------------|
 | [Qwen Code](#qwen-code) | Qwen3.6-Plus, Qwen3-Coder-480B | 2,000 req/day | No |
-| [Gemini CLI](#gemini-cli) | Gemini 3.1 Pro/Flash | 100-250 req/day | No |
-| [Rovo Dev CLI](#rovo-dev-cli) | Claude Sonnet 4, GPT-5 preview | 5M tokens/day | No |
-| [Warp](#warp) | GPT-5, Claude Opus 4.1 | 150 credits/month | No |
+| [Gemini CLI](#gemini-cli) | Gemini 3.1 Flash [verify: Pro paid] | 100-250 req/day | No |
+| [Rovo Dev CLI](#rovo-dev-cli) | Claude Sonnet 4 [verify], GPT-5 preview [verify] | 5M tokens/day | No |
+| [Warp](#warp) | GPT-4.1, Claude Opus 4.1 [verify] | 150 credits/month | No |
 | [GitHub Copilot](#github-copilot) | GPT-4.1, Claude Opus | 50 chat + 2K completions/month | No |
 | [Jules](#jules) | Gemini 2.5 Pro | 15 tasks/day | No |
-| [AWS Kiro](#aws-kiro) | Claude 4 Sonnet | 50 credits/month | No |
+| [AWS Kiro](#aws-kiro) | Claude Sonnet 4 [verify] | 50 credits/month | No |
 | [OpenCode](#opencode) | 300+ models via OpenRouter | Zen Free tier | No |
 | [ForgeCode](#forgecode) | 300+ models via OpenRouter | 10K tokens/day | No |
-| [Amazon Q Developer](#amazon-q-developer) | Claude Sonnet 4 | 50 agentic req/month | Required |
-| [CLIO](#clio) | Bring your own keys | Unlimited (BYOK) | No |
+| [Amazon Q Developer](#amazon-q-developer) | Claude Sonnet 4 [verify] | 50 agentic req/month | Required |
 | [RooCode](#roocode) | Bring your own keys | Unlimited (BYOK) | No |
 | [Goose](#goose) | Bring your own keys | Unlimited (BYOK) | No |
 | [OhMyPi](#ohmypi) | Bring your own keys | Unlimited (BYOK) | No |
@@ -296,7 +298,7 @@ Data is used for training when used outside UK/CH/EEA/EU.
 
 | Model | Free Tier Limits |
 |-------|------------------|
-| Gemini 3.1 Pro | 250 RPD (Tier 1) |
+| Gemini 3.1 Pro [verify: now paid] | 250 RPD (Tier 1) |
 | Gemini 3 Flash | 1,500 RPD |
 | All others | Check console |
 
@@ -491,7 +493,7 @@ Full-featured integrated development environments with built-in AI assistance.
 
 **Model:** GPT-5.1-Codex-Max (77.9% SWE-bench Verified) [verify]
 - **Free tier:** **500 slow premium req/mo, 2K completions/mo** (post-Dec 2025 credits)
-- Free models: Cursor Small, Deepseek v3, Gemini 2.5 Flash, GPT-4o mini (500/day limit), Grok 3 Mini Beta, **GPT-5.4** (limited)
+- Free models: Cursor Small, Deepseek v3, Gemini 2.5 Flash, GPT-4o mini (500/day limit), Grok 3 Mini Beta [verify: GPT-5.4 now paid-only]
 - Claude models removed from free tier ~June 2025
 - Free tier uses token-based usage tracking (not request-based)
 - AI-powered code editor with autonomous coding capabilities
@@ -552,7 +554,7 @@ Full-featured integrated development environments with built-in AI assistance.
 
 #### [Qoder](https://qoder.com/)
 
-**Models:** Qwen3.6-Plus (71.2% SWE), Qwen-Coder-Qoder, **GPT-5.4 limited**, Claude 4.6, Gemini 3.1 Pro
+**Models:** Qwen3.6-Plus (71.2% SWE), Qwen-Coder-Qoder, GPT-4o, Claude Sonnet [verify: flagship models now paid-only]
 - **Free tier:** Unlimited completions + **limited chat/agent (basic models)** + **2-week Pro trial (1,000 credits)**
 - **Experts Mode:** Multi-agent collaboration (new Mar 2026)
 - **Quest Mode:** Fully autonomous app building
@@ -691,9 +693,9 @@ General-purpose chat interfaces with free tiers.
 
 | Platform | Free Model | Key Capabilities | Limitations |
 |----------|------------|------------------|-------------|
-| [ChatGPT](https://chatgpt.com) | **GPT-5.4 Instant** | Sora 3, DALL-E 4, GPT Store | ~20 msgs/3hr |
+| [ChatGPT](https://chatgpt.com) | **GPT-4o / GPT-5.4-limited** [verify] | Sora 3, DALL-E 4, GPT Store | ~20 msgs/3hr |
 | [Gemini](https://gemini.google.com) | **Gemini 3.1 Flash** | 2M Context, **20 Deep Research/mo** | Research quota |
-| [Claude](https://claude.ai) | **Claude Opus 4.6** | Technical reasoning | ~30 msgs/5h |
+| [Claude](https://claude.ai) | **Claude Sonnet/Haiku** [verify: Opus paid-only] | Technical reasoning | ~30 msgs/5h |
 | [Grok](https://grok.com) | **Grok 4.2** | Aurora 2 images, voice | 15 msgs/12hr |
 | [Mistral Le Chat](https://chat.mistral.ai) | **Mistral Medium 3** | Structured output | Fewer integrations |
 
@@ -726,7 +728,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Gemini CLI](https://github.com/google-gemini/gemini-cli)
 
-**Models:** Gemini 3.1 Pro (dynamic routing), Gemini 3 Pro, Gemini 2.5 Pro
+**Models:** Gemini 3.1 Flash [verify: Pro now paid], Gemini 2.5 Pro
 - Gemini 3.1 Pro latest version (v0.37.1 April 2026)
 - 100 requests/day for Gemini 2.5 Pro (free tier fallback)
 - 250 requests/day for Gemini 2.5 Flash
@@ -741,7 +743,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Rovo Dev CLI](https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface)
 
-**Models:** Claude Sonnet 4 (72.7% SWE-bench [verify]), GPT-5 preview (added Aug 2025)
+**Models:** Claude Sonnet 4 [verify], GPT-5 preview [verify]
 - 5M tokens/day free tier
 - No credit card required during beta
 - Token limits reset at midnight UTC
@@ -756,7 +758,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Warp](https://warp.dev/)
 
-**Models:** GPT-5, Claude Opus 4.1, Claude Sonnet 4, Gemini 2.5 Pro
+**Models:** GPT-4.1, Claude Opus 4.1 [verify], Claude Sonnet 4 [verify], Gemini 2.5 Pro
 - 150 AI credits/month (first 2 months), then 75 AI credits/month
 - No credit card required for basic signup
 - AI-powered terminal with code generation
@@ -820,7 +822,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Amazon Q Developer](https://aws.amazon.com/q/developer/)
 
-**Model:** Claude Sonnet 4 (AWS-hosted)
+**Model:** Claude Sonnet 4 [verify] (AWS-hosted)
 - 50 agentic requests/month limit (multi-turn conversations)
 - Latest Claude models
 - Credit card required
@@ -854,22 +856,6 @@ Command-line tools for AI-assisted coding in your terminal.
 - 10K tokens/day free tier
 
 **[GitHub](https://github.com/antinomyhq/forgecode)** | **[Website](https://forgecode.dev)**
-
----
-
-#### [CLIO](https://github.com/SyntheticAutonomicMind/CLIO)
-
-**Models:** GitHub Copilot, OpenAI, Gemini, DeepSeek, OpenRouter, MiniMax, llama.cpp, LM Studio, SAM
-- Terminal-first AI code assistant (Perl-based)
-- ~50 MB at startup, runs on anything from Raspberry Pi to M4 Mac
-- Actually autonomous: reads, writes, tests, commits, iterates
-- Privacy-first: secret redaction, minimum context sent to AI
-- Multi-agent coordination with file locks and git locks
-- Remote execution via SSH across your entire fleet
-- Persistent sessions with long-term memory
-- MCP (Model Context Protocol) support
-
-**[GitHub](https://github.com/SyntheticAutonomicMind/CLIO)**
 
 ---
 
@@ -930,7 +916,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Claude Code](https://www.anthropic.com/claude-code)
 
-**Models:** Claude Sonnet 4, Opus 4.5, Haiku 4.5
+**Models:** Claude Sonnet 4 [verify], Opus 4.5 [verify: paid-only], Haiku 4.5
 - Free tier available with limited usage
 - Pro ($20/mo or $17/mo annually): Sonnet 4 access with more usage
 - Max 5x ($100/mo): ~225 messages/5 hours
@@ -1047,7 +1033,7 @@ These services provide API access to coding-optimized models for tools like Curs
 | [Trae](https://trae.ai/) | Pro ($10/mo) | 600 fast + unlimited slow | Zero rate limits |
 | [Windsurf](https://windsurf.com/) | Pro ($20/mo) | 500 prompt credits | Multi-provider |
 | [Qoder](https://qoder.com/) | Pro ($10/mo - 50% off) | 2,000 credits | Quest Mode, Experts Mode |
-| [Codeium](https://codeium.com/) | Pro ($10/mo) | Unlimited | Claude 4.6, GPT-5.4 |
+| [Codeium](https://codeium.com/) | Pro ($10/mo) | Unlimited | Claude 4.6 [verify], GPT-5.4 [verify] |
 | [Tabnine](https://www.tabnine.com/) | Pro ($12/mo) | Enhanced completions | 600+ languages |
 | [JetBrains AI](https://www.jetbrains.com/ai/) | AI Pro ($15/mo) | Increased cloud quota | Unlimited local models |
 | ~~[SuperMaven](https://supermaven.com/)~~ | ~~DISCONTINUED Nov 2025~~ | ~~1M token context~~ | ~~Acquired by Cursor~~ |
@@ -1056,7 +1042,7 @@ These services provide API access to coding-optimized models for tools like Curs
 
 | Tool | Entry Tier | Credits/Requests | Key Features |
 |------|------------|------------------|--------------|
-| [Claude Code](https://www.anthropic.com/claude-code) | Pro ($20/mo) | ~225 messages/5h | Sonnet 4 access |
+| [Claude Code](https://www.anthropic.com/claude-code) | Pro ($20/mo) | ~225 messages/5h | Sonnet access [verify] |
 | [Warp](https://warp.dev/) | Build ($20/mo) | 1,500 credits/month | BYOK available |
 | [GitHub Copilot](https://github.com/features/copilot) | Pro ($10/mo) | 300 premium req/month | Unlimited completions |
 | [Rovo Dev CLI](https://www.atlassian.com/rovo) | Jira Standard ($7.53/mo) | 20M tokens/day | 4x free tier |
@@ -1082,12 +1068,16 @@ Running open-weight frontier models locally provides unlimited coding assistance
 **Notable Local Models (2026):**
 
 - Qwen3.6-Plus-480B (71.2% SWE, ~150GB VRAM)
+- **Gemma 4** [verify] (Google, Apache 2.0, fully open-source)
+- **GLM-5.1 / GLM-5V-Turbo** [verify] (Zhipu MoE-based SOTA coders)
 - Devstral 2 (24B, Apache 2.0, agent-optimized)
 - DeepSeek Coder V4 (lite version ~18GB)
 - Codestral 2 (Mistral, 22B)
 - GLM-4.9-Air (Chinese/English coding)
 
 > **Note:** Frontier models require substantial RAM/VRAM. See [Unsloth Qwen3-Coder guide](https://docs.unsloth.ai/basics/qwen3-coder-how-to-run-locally) for details.
+
+> **Update April 2026:** Gemma 4 and GLM-5.1 families are new flagship open-source releases. Verify availability in Ollama/LM Studio before downloading.
 
 ---
 
@@ -1144,8 +1134,8 @@ free-coding-models --tier S --json | jq -r '.[0].modelId'
 
 | Tier | SWE-bench | Best For |
 |------|-----------|----------|
-| **S+** | ≥75% | **Claude Opus 4.6 (84.2%), GPT-5.4 (80.1%)** |
-| **S** | 65-75% | **Qwen3.6-Plus (71.2%), Claude Sonnet 4.6** |
+| **S+** | ≥75% | **Claude Opus 4.6 [verify], GPT-5.4 [verify]** |
+| **S** | 65-75% | **Qwen3.6-Plus (71.2%), Claude Sonnet 4.6 [verify]** |
 | **A+/A** | 40–60% | Solid alternatives |
 | **A-/B+** | 30–40% | Smaller tasks |
 | **B/C** | < 30% | Code completion |
@@ -1306,8 +1296,6 @@ Professional-grade content creation with generous free tiers.
 | [ComfyUI](https://comfyui.org) | Image Generation | Node-based interface for Stable Diffusion |
 | [Zed](https://zed.dev) | AI IDE | 50 AI prompts/month, native performance, high speed |
 | [Void IDE](https://voideditor.com/) | Agent-first IDE | Multi-agent frontend/backend/testing | Preview, free tier |
-| [SAM](https://github.com/SyntheticAutonomicMind/SAM) | macOS AI Assistant | Native Swift AI assistant, local models, privacy-first | Free, open source |
-| [ALICE](https://github.com/SyntheticAutonomicMind/ALICE) | Local Image Generation | Stable Diffusion service for private image generation | Free, local GPU |
 | [MemoryPalace](https://github.com/milla-jovovich/mempalace) | AI Memory System | 96.6% LongMemEval — memory palace technique for AI conversations | Free, open source |
 
 ---
@@ -1526,7 +1514,7 @@ User Query → Embedding → Similarity Search → LLM → Response
 - Framework: LlamaIndex or LangChain
 - Embeddings: BGE-Large or Jina v3
 - Vector DB: ChromaDB (dev) → Pinecone (prod)
-- LLM: Claude Sonnet 4.6 or GPT-5.4
+- LLM: Claude Sonnet [verify] or GPT-4o
 
 ---
 
@@ -1556,7 +1544,7 @@ User Request → Router (classify intent)
     ┌───────────────┼───────────────┐
     ↓               ↓               ↓
 Cheap Model    Medium Model    Expensive Model
-(GPT-5 Nano)      (Claude Sonnet 4.6) (Claude Opus)
+(GPT-5 Nano)      (Claude Sonnet [verify]) (Claude Opus [verify])
     ↓               ↓               ↓
 Simple Q&A    Complex task    Hard reasoning
 ```
@@ -1647,7 +1635,7 @@ Don't just use SWE-bench - match models to your specific task.
 |-------|-----|-----------|
 | **Claude Sonnet 4.6** | **79.3%** SWE-bench, excellent at following instructions | 25 msgs/5h (Claude Code) |
 | **Qwen3.6-Plus** | **71.2%** SWE-bench, Chinese + English, agent-optimized | 2,000 req/day |
-| **GPT-5.4** | **80.1%** SWE-bench, long context compaction | Cursor Hobby (limited) |
+| **GPT-5.4** [verify: paid-only] | **80.1%** SWE-bench, long context compaction | ChatGPT Plus/Pro |
 | **DeepSeek V4** | Near-Sonnet performance at 1/10th cost | DeepSeek API |
 
 ### 🧠 Complex Reasoning & Analysis
@@ -1665,7 +1653,7 @@ Don't just use SWE-bench - match models to your specific task.
 |-------|-----|---------------|
 | **Gemini 2.5 Flash** | 1M context, high throughput | ~$0.35/$1.00 |
 | **GPT-5 Nano** | Newest cheap model from OpenAI | $0.50/$2.00 |
-| **GPT-5.4 Instant** | ChatGPT free tier model, fast | Variable (free tier) |
+| **GPT-4o** | ChatGPT free tier model, fast | Variable (free tier) |
 | **GLM 4.5 Air** | Good quality, extremely cheap | ~$0.40/$0.80 |
 | **MiniMax M2.7** | **80.2%** SWE-bench, dirt cheap | $0.08/$0.12 |
 
@@ -1674,7 +1662,7 @@ Don't just use SWE-bench - match models to your specific task.
 | Model | Why | Free Tier |
 |-------|-----|-----------|
 | **Claude Sonnet 4.6** | Best tool use, reliable agent behavior | Various |
-| **GPT-5.4** | Compaction for 24+ hour sessions | Cursor Hobby |
+| **GPT-5.4** [verify: paid-only] | Compaction for 24+ hour sessions | ChatGPT Plus/Pro |
 | **Qwen3.6-Plus** | Built for agentic workflows | 2,000 req/day |
 | **Big Pickle (OpenCode)** | 72% SWE-bench [verify], agent-optimized | Zen Free tier |
 
@@ -1718,7 +1706,7 @@ Critical for scaling applications. Plan your architecture.
 | **AI Reel Generator** | Gemini 3.1 Flash (video) + Groq (audio) |
 | **Trading AI** | Groq + local Qwen3.6-Plus |
 | **Chatbot** | OpenRouter + Gemini 3.1 Flash (cheap) |
-| **Code Review Bot** | DeepSeek V4 (cheap) + Claude Sonnet 4.6 (quality) |
+| **Code Review Bot** | DeepSeek V4 (cheap) + Claude Sonnet [verify] (quality) |
 
 ---
 

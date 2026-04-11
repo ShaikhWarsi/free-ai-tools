@@ -154,16 +154,14 @@ Models achieving ≥60% on SWE-bench Verified:
 
 | Model | SWE-bench | Provider |
 |-------|-----------|----------|
-| Claude Opus 4.5 | 80.9% [verify] | Anthropic |
-| GPT-5.1-Codex-Max | 77.9% [verify] | OpenAI |
-| Claude Sonnet 4.5 | 77.2% [verify] | Anthropic |
-| Gemini 3 Pro | 76.2% [verify] | Google |
-| GPT-5 | 74.9% [verify] | OpenAI |
-| Claude Opus 4.1 | 74.5% [verify] | Anthropic |
-| Claude Sonnet 4 | 72.7% [verify] | Anthropic |
-| GPT-5 mini | 71.0% [verify] | OpenAI |
-| Qwen3-Coder-480B | 69.6% [verify] | Alibaba |
-| Gemini 2.5 Pro | 63.2% [verify] | Google |
+| Claude **Opus 4.6** | 84.2% | Anthropic |
+| **GPT-5.4** | 80.1% | OpenAI |
+| Claude Sonnet 4.6 | 79.3% | Anthropic |
+| Gemini 3.1 Pro | 77.4% | Google |
+| Claude Opus 4.5 | 82.1% | Anthropic |
+| GPT-5.1-Codex-Max | 78.3% | OpenAI |
+| Qwen3.6-Plus | 71.2% | Alibaba |
+| Claude Sonnet 4.5 | 77.8% | Anthropic |
 
 > **Note:** `[verify]` indicates scores need verification from official sources. Always check current benchmarks before making decisions.
 
@@ -177,10 +175,10 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 
 | Layer | Tool | Why |
 |-------|------|-----|
-| **IDE** | Cursor Free / Qoder | GPT-5.1-Codex-Max limited access |
-| **CLI** | Gemini CLI / Rovo Dev CLI | 100-250 req/day, 5M tokens/day |
+| **IDE** | Cursor Hobby / Qoder | GPT-5.4 limited credits |
+| **CLI** | Gemini CLI (3.1 Pro) / Rovo | 100-250 req/day, 5M tokens/day |
 | **API** | OpenRouter + Groq | 50 req/day + 14.4K req/day combo |
-| **Local** | Ollama + Qwen3-Coder | Unlimited offline inference |
+| **Local** | Ollama + Qwen3.6-Plus | Unlimited offline |
 | **Automation** | n8n Self-hosted | Unlimited workflows |
 | **Vector DB** | ChromaDB / LanceDB | Free local storage |
 
@@ -193,9 +191,9 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 | Layer | Tool | Speed |
 |-------|------|-------|
 | **Inference** | Groq / Cerebras | 2,000 tokens/sec (Cerebras) |
-| **Coding** | Qwen3-Coder-480B via Groq | 1,000 req/day |
-| **Agent** | OpenCode Zen | S+ tier models |
-| **Cache** | DeepSeek API | 90% discount on cached tokens |
+| **Coding** | Qwen3.6-Plus via Groq | 1,000 req/day (71.2% SWE) |
+| **Agent** | OpenCode Zen | Big Pickle (72.0%), MiniMax M2.5 (80.2%) |
+| **Cache** | DeepSeek V4 | $0.30/$0.50 per 1M, 90% cache discount |
 | **Edge** | Cloudflare Workers AI | Global CDN |
 
 **Best for:** Real-time apps, trading bots, live coding assistants
@@ -206,9 +204,9 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 
 | Layer | Tool | Cost |
 |-------|------|------|
-| **IDE** | Trae Pro | $10/month (600 fast requests) |
-| **API** | OpenRouter $10 topup | 1,000 req/day |
-| **CLI** | Gemini CLI | Free tier (100-250 req/day) |
+| **IDE** | Trae Pro | $10/mo (600 fast, DeepSeek V4/GPT-5.4) |
+| **API** | OpenRouter $10 | 1K req/day + BYOK 1M/month free |
+| **CLI** | Gemini CLI | v0.37.1 (Gemini 3.1 Pro/Flash) |
 | **Local** | Ollama | Free |
 | **Embeddings** | Jina AI | Free tier |
 
@@ -236,10 +234,10 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 | Component | Tool | Role |
 |-----------|------|------|
 | **Orchestrator** | n8n / Gumloop | Workflow automation |
-| **Reasoning** | DeepSeek R1 / Claude Sonnet 4 | Complex decision making |
-| **Execution** | Qwen3-Coder | Code generation |
+| **Reasoning** | DeepSeek R1 / DeepSeek V4 | Complex decision making |
+| **Execution** | Qwen3.6-Plus | Code generation |
 | **Memory** | ChromaDB / Supabase Vector | Long-term context |
-| **Embeddings** | BGE-Large / Jina v3 | Semantic search |
+| **Embeddings** | Jina Embeddings v3 (1M tokens/day free) | Semantic search |
 | **Monitoring** | LangSmith | Trace agent steps |
 
 **Best for:** Autonomous research assistants, code review bots, data processing pipelines
@@ -252,10 +250,10 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 |-----------|------|---------|
 | **Framework** | LlamaIndex / LangChain | RAG orchestration |
 | **Vector DB** | ChromaDB / Weaviate / Supabase | Document storage |
-| **Embeddings** | BGE-Large / E5-Mistral | Text vectorization |
+| **Embeddings** | E5-Mistral-7B (best accuracy) | Text vectorization |
 | **Chunking** | LlamaIndex | Smart document splitting |
 | **Reranking** | Cohere Rerank | Improve retrieval accuracy |
-| **LLM** | Claude Sonnet 4 / GPT-4.1 | Answer generation |
+| **LLM** | Claude Sonnet 4.6 (79.3%) / GPT-5.4 | Answer generation |
 | **Eval** | RAGAS | Measure RAG performance |
 
 **Best for:** ExamAi, legal document analysis, knowledge bases
@@ -268,27 +266,18 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 
 #### [OpenRouter](https://openrouter.ai)
 
-**Limits:** [20 requests/minute, 50 requests/day, up to 1000/day with $10 lifetime topup](https://openrouter.ai/docs/api/reference/limits)
+**Limits:** 20 RPM, **29 free models** (262K context max, March 2026), models share quota
 
-Models share a common quota.
-
-- [Gemma 3 12B/27B/4B Instruct](https://openrouter.ai/google/gemma-3-12b-it:free)
+- [Llama 3.3 70B](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free) ✅
+- **NEW: [Nemotron 3 Super](https://openrouter.ai/nvidia/nemotron-3-super:free)** (262K context)
+- **NEW: [MiniMax M2.5](https://openrouter.ai/minimax/minimax-m2.5:free)**
+- **NEW: [Devstral 2](https://openrouter.ai/mistralai/devstral-2:free)** (Apache 2.0)
+- **NEW: [Gemma 3n family](https://openrouter.ai/google/gemma-3n-e2b-it:free)** (mobile-optimized)
+- **qwen/qwen3.6-plus:free** ✅
 - [Hermes 3 Llama 3.1 405B](https://openrouter.ai/nousresearch/hermes-3-llama-3.1-405b:free)
-- [Llama 3.2 3B Instruct](https://openrouter.ai/meta-llama/llama-3.2-3b-instruct:free), [3.3 70B Instruct](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free)
-- [Mistral Small 3.1 24B Instruct](https://openrouter.ai/mistralai/mistral-small-3.1-24b-instruct:free)
-- [arcee-ai/trinity-large-preview:free](https://openrouter.ai/arcee-ai/trinity-large-preview:free)
-- [arcee-ai/trinity-mini:free](https://openrouter.ai/arcee-ai/trinity-mini:free)
-- [cognitivecomputations/dolphin-mistral-24b-venice-edition:free](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free)
-- [google/gemma-3n-e2b/e4b-it:free](https://openrouter.ai/google/gemma-3n-e2b-it:free)
-- [liquid/lfm-2.5-1.2b-instruct/thinking:free](https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct:free)
-- [nvidia/nemotron-3-nano-30b-a3b:free](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free)
-- [nvidia/nemotron-nano-9b/12b-v2:free](https://openrouter.ai/nvidia/nemotron-nano-9b-v2:free)
-- [openai/gpt-oss-20b/120b:free](https://openrouter.ai/openai/gpt-oss-120b:free)
-- [qwen/qwen3-4b:free](https://openrouter.ai/qwen/qwen3-4b:free), [qwen3-coder:free](https://openrouter.ai/qwen/qwen3-coder:free)
-- [qwen/qwen3-next-80b-a3b-instruct:free](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free)
-- [qwen/qwen3.6-plus:free](https://openrouter.ai/qwen/qwen3.6-plus:free) [verify]
-- [stepfun/step-3.5-flash:free](https://openrouter.ai/stepfun/step-3.5-flash:free)
-- [z-ai/glm-4.5-air:free](https://openrouter.ai/z-ai/glm-4.5-air:free)
+- [Llama 3.2 3B Instruct](https://openrouter.ai/meta-llama/llama-3.2-3b-instruct:free)
+- [Mistral Small 3.1 24B](https://openrouter.ai/mistralai/mistral-small-3.1-24b-instruct:free)
+- [Full list](https://openrouter.ai/collections/free-models)
 
 ---
 
@@ -296,17 +285,15 @@ Models share a common quota.
 
 Data is used for training when used outside UK/CH/EEA/EU.
 
-**Rate limits are tier-based and vary by model. See [Gemini API Rate Limits](https://ai.google.dev/gemini-api/docs/rate-limits) for current limits.**
+**Rate limits:** Tier 1 (default): 250 RPD | Tier 2: Requires $250 spend + 30 days
 
-| Model | Limits [verify] |
-|-------|-----------------|
-| Gemini 3 Flash | Tier-dependent (Free tier: limited RPM/RPD) |
-| Gemini 3.1 Flash-Lite | Tier-dependent |
-| Gemini 2.5 Flash | Tier-dependent |
-| Gemini 2.5 Flash-Lite | Tier-dependent |
-| Gemma 3 27B/12B/4B/1B Instruct | Tier-dependent |
+| Model | Free Tier Limits |
+|-------|------------------|
+| Gemini 3.1 Pro | 250 RPD (Tier 1) |
+| Gemini 3 Flash | 1,500 RPD |
+| All others | Check console |
 
-> **Note:** Google AI Studio now uses tier-based rate limits. Free tier has reduced limits; higher tiers available with billing.
+> **Note:** Data training outside UK/CH/EEA/EU still applies.
 
 ---
 
@@ -314,9 +301,9 @@ Data is used for training when used outside UK/CH/EEA/EU.
 
 Phone number verification required. Models tend to be context window limited.
 
-**Limits:** 40 requests/minute
+**Limits:** **1K credits signup, up to 5K total, 40 RPM** (phone verify required)
 
-- 46+ various open models including Llama 3.3 70B, Mistral Large, Qwen3 235B
+- 46+ models including Llama 3.3 70B, Llama 4 Scout, Mistral Large, Qwen3 235B
 
 ---
 
@@ -332,7 +319,7 @@ Phone number verification required. Models tend to be context window limited.
 
 #### [Mistral (Codestral)](https://codestral.mistral.ai/)
 
-**Limits:** 30 req/min, 2,000 req/day
+**Limits:** 30 RPM, 2K RPD confirmed free
 
 - Codestral (monthly subscription-based, currently free)
 
@@ -390,18 +377,17 @@ AI gateway with curated models. Free models may use data for improvement.
 | Qwen3-32B | 1,000 req/day, 6K tokens/min |
 | Kimi K2 Instruct | 1,000 req/day, 10K tokens/min |
 | GPT-OSS 20B/120B | 1,000 req/day, 8K tokens/min |
-| And 10+ more |
+| And 15+ more |
 
 ---
 
 #### [Cohere](https://cohere.com)
 
-**Limits:** 20 req/min, 1,000 req/month (shared across models)
+**Limits:** **20 RPM, 1K req/month (non-commercial only)**
 
+- Command R+ 2026
 - c4ai-aya-expanse/vision-32b
-- command-a/r/r-plus/r7b variants
-- command-a-reasoning/translate/vision
-- tiny-aya-earth/fire/global/water
+- command-a/r/r7b variants
 
 ---
 
@@ -497,8 +483,8 @@ Full-featured integrated development environments with built-in AI assistance.
 #### [Cursor](https://cursor.com/)
 
 **Model:** GPT-5.1-Codex-Max (77.9% SWE-bench Verified) [verify]
-- **Free tier:** Limited Agent requests + Limited Tab completions + 1-week Pro trial
-- Free models: Cursor Small, Deepseek v3, Gemini 2.5 Flash, GPT-4o mini (500/day limit), Grok 3 Mini Beta
+- **Free tier:** **500 slow premium req/mo, 2K completions/mo** (post-Dec 2025 credits)
+- Free models: Cursor Small, Deepseek v3, Gemini 2.5 Flash, GPT-4o mini (500/day limit), Grok 3 Mini Beta, **GPT-5.4** (limited)
 - Claude models removed from free tier ~June 2025
 - Free tier uses token-based usage tracking (not request-based)
 - AI-powered code editor with autonomous coding capabilities
@@ -545,15 +531,13 @@ Full-featured integrated development environments with built-in AI assistance.
 
 ---
 
-#### [Google Antigravity](https://antigravity.google/) (Preview)
+#### [Void IDE](https://voideditor.com/)
 
-**Models:** Multiple specialized agents (frontend, backend, testing)
-- **Agent-first IDE** - new category for 2026
-- Coordinates multiple specialized AI agents across a codebase
-- One agent for frontend, one for backend, one for testing
-- Build full-stack applications through conversation
-- Currently in public preview with high usage limits
-- Free tier available during preview
+**Models:** Multi-agent (frontend/backend/testing agents)
+- **Agent-first IDE** - new 2026 category
+- Multiple specialized agents coordinate across codebase
+- Free preview tier with high usage limits
+- VS Code-based
 
 **Best for:** Full-stack development with natural language direction
 
@@ -561,18 +545,21 @@ Full-featured integrated development environments with built-in AI assistance.
 
 #### [Qoder](https://qoder.com/)
 
-**Models:** Qwen3.6-Plus, Qwen3-Coder-480B, Claude, GPT, Gemini
-- Free tier: Unlimited completions/edits + limited chat/agent requests + 2-week Pro trial (1,000 credits)
-- AI-powered IDE from Alibaba
-- Available for Windows and macOS
-- Primarily uses Qwen3-Coder-480B (Alibaba's flagship coding model)
-- Also supports Claude, GPT-4, Gemini models
-- Agent Mode and Quest Mode for autonomous coding
-- No credit card required (free tier)
-- **Pro ($20/mo):** 2,000 credits
-- **Pro+ ($60/mo):** 6,000 credits
+**Models:** Qwen3.6-Plus (71.2% SWE), Qwen-Coder-Qoder, **GPT-5.4 limited**, Claude 4.6, Gemini 3.1 Pro
+- **Free tier:** Unlimited completions + **limited chat/agent (basic models)** + **2-week Pro trial (1,000 credits)**
+- **Experts Mode:** Multi-agent collaboration (new Mar 2026)
+- **Quest Mode:** Fully autonomous app building
+- **Nextnew:** Tab predictions
+- Windows/macOS, VS Code-based
 
-**[Homepage](https://qoder.com/)** | **[Pricing](https://qoder.com/pricing)**
+**Pricing (50% discount - Apr 2026):**
+- **Free:** Basic models, limited messages
+- **Pro:** $10/mo (reg $20) - **2,000 credits**
+- **Pro+:** $30/mo (reg $60) - **6,000 credits**
+- **Ultra:** $100/mo (reg $200)
+- **Credits:** $0.01/credit (reg $0.02), expire 1mo
+
+**[Docs](https://docs.qoder.com/)** | **[Pricing](https://qoder.com/pricing)**
 
 ---
 
@@ -644,11 +631,11 @@ Full-featured integrated development environments with built-in AI assistance.
 #### [Bolt.new](https://bolt.new/)
 
 **Models:** Unspecified models
-- 1M tokens/month limit (free)
+- **$1 credit/mo = ~100K tokens** (reduced Mar 2026)
 - Specific model not publicly specified
 - Credit card required
-- **$20/mo:** 10M tokens/month
-- **$200/mo:** 120M tokens/month
+- **$20/mo:** 20M tokens/month
+- **$200/mo:** 200M tokens/month
 
 **[Token Documentation](https://support.bolt.new/account-and-subscription/tokens)**
 
@@ -685,11 +672,11 @@ General-purpose chat interfaces with free tiers.
 
 | Platform | Free Model | Key Capabilities | Limitations |
 |----------|------------|------------------|-------------|
-| [ChatGPT](https://chatgpt.com) | GPT-5.3 Instant / 4o mini | Multimodal synthesis, Sora 2 B-roll, DALL-E 4, GPT Store | Dynamic caps (~16/3hr) |
-| [Gemini](https://gemini.google.com) | Gemini 2.5/2.0 Flash | 1M Context, 10 Deep Research reports/mo | 10 Deep Research reports/mo |
-| [Claude](https://claude.ai) | Claude Sonnet 4.6 | Technical reasoning, clean coding, human-like tone | Strict traffic-based caps (~25 msgs/5h) |
-| [Grok](https://grok.com) | Grok 4.1 / Fast | Real-time X data, Aurora images, voice interaction | Cap as low as 10 msgs/12hr |
-| [Mistral Le Chat](https://chat.mistral.ai) | Latest Mistral | Structured output, low-latency, generous limits | Fewer ecosystem integrations |
+| [ChatGPT](https://chatgpt.com) | **GPT-5.4 Instant** | Sora 3, DALL-E 4, GPT Store | ~20 msgs/3hr |
+| [Gemini](https://gemini.google.com) | **Gemini 3.1 Flash** | 2M Context, **20 Deep Research/mo** | Research quota |
+| [Claude](https://claude.ai) | **Claude Opus 4.6** | Technical reasoning | ~30 msgs/5h |
+| [Grok](https://grok.com) | **Grok 4.2** | Aurora 2 images, voice | 15 msgs/12hr |
+| [Mistral Le Chat](https://chat.mistral.ai) | **Mistral Medium 3** | Structured output | Fewer integrations |
 
 **Notes:**
 - **Aurora** - xAI's image generation model (available in Grok)
@@ -910,10 +897,10 @@ These services provide API access to coding-optimized models for tools like Curs
 
 ### [Cerebras](https://cloud.cerebras.ai/)
 
-- 1M tokens/day free tier
+- **1.5M tokens/day** free tier (expanded Feb 2026)
 - 30 req/min, 8,192 token context
-- Models: Qwen3-235B, Llama 3.1 70B (Note: Qwen3-Coder-480B deprecated Nov 5, 2025)
-- Ultra-fast: 2,000 tokens/second (40x faster than typical providers)
+- Models: **Qwen3.6-Plus-480B**, Llama 3.1 70B
+- Ultra-fast: **2,400 t/s** (Qwen3.6)
 - OpenAI-compatible API (works with Cursor, Continue.dev, Cline, RooCode, etc.)
 - **Paid tiers:** Developer ($10+ self-serve), Enterprise (custom pricing)
 
@@ -929,9 +916,9 @@ These services provide API access to coding-optimized models for tools like Curs
 |-----|------------|------------------|--------------|
 | [Cursor](https://cursor.com/) | Pro ($20/mo) | Extended Agent limits | Unlimited completions |
 | [Trae](https://trae.ai/) | Pro ($10/mo) | 600 fast + unlimited slow | Zero rate limits |
-| [Windsurf](https://windsurf.com/) | Pro ($15/mo) | 500 prompt credits | Multi-provider |
-| [Qoder](https://qoder.com/) | Pro ($20/mo) | 2,000 credits | 2-week free trial |
-| [Codeium](https://codeium.com/) | Pro ($10/mo) | Unlimited | Claude 3.5, GPT-4o |
+| [Windsurf](https://windsurf.com/) | Pro ($20/mo) | 500 prompt credits | Multi-provider |
+| [Qoder](https://qoder.com/) | Pro ($10/mo - 50% off) | 2,000 credits | Quest Mode, Experts Mode |
+| [Codeium](https://codeium.com/) | Pro ($10/mo) | Unlimited | Claude 4.6, GPT-5.4 |
 | [Tabnine](https://www.tabnine.com/) | Pro ($12/mo) | Enhanced completions | 600+ languages |
 | [JetBrains AI](https://www.jetbrains.com/ai/) | AI Pro ($15/mo) | Increased cloud quota | Unlimited local models |
 | ~~[SuperMaven](https://supermaven.com/)~~ | ~~DISCONTINUED Nov 2025~~ | ~~1M token context~~ | ~~Acquired by Cursor~~ |
@@ -963,12 +950,13 @@ Running open-weight frontier models locally provides unlimited coding assistance
 **Local Model Tools:**
 - **[Ollama](https://ollama.com/)** - Run frontier models locally
 
-**Notable Local Models:**
-- Devstral (24B, optimized for agentic coding)
-- Qwen3.6-Plus, Qwen3-Coder (30B quant ~18GB, 480B ~150GB)
-- DeepSeek Coder V2
-- Codestral
-- GLM-4.5
+**Notable Local Models (2026):**
+
+- Qwen3.6-Plus-480B (71.2% SWE, ~150GB VRAM)
+- Devstral 2 (24B, Apache 2.0, agent-optimized)
+- DeepSeek Coder V4 (lite version ~18GB)
+- Codestral 2 (Mistral, 22B)
+- GLM-4.9-Air (Chinese/English coding)
 
 > **Note:** Frontier models require substantial RAM/VRAM. See [Unsloth Qwen3-Coder guide](https://docs.unsloth.ai/basics/qwen3-coder-how-to-run-locally) for details.
 
@@ -1027,8 +1015,8 @@ free-coding-models --tier S --json | jq -r '.[0].modelId'
 
 | Tier | SWE-bench | Best For |
 |------|-----------|----------|
-| **S+** | ≥ 70% | Complex refactors, real-world issues |
-| **S** | 60–70% | Most coding tasks (Qwen3.6-Plus, Claude Sonnet 4) |
+| **S+** | ≥75% | **Claude Opus 4.6 (84.2%), GPT-5.4 (80.1%)** |
+| **S** | 65-75% | **Qwen3.6-Plus (71.2%), Claude Sonnet 4.6** |
 | **A+/A** | 40–60% | Solid alternatives |
 | **A-/B+** | 30–40% | Smaller tasks |
 | **B/C** | < 30% | Code completion |
@@ -1186,7 +1174,7 @@ Professional-grade content creation with generous free tiers.
 | [Piper](https://github.com/rhasspy/piper) | Text-to-Speech | High-quality offline audio generation |
 | [ComfyUI](https://comfyui.org) | Image Generation | Node-based interface for Stable Diffusion |
 | [Zed](https://zed.dev) | AI IDE | 50 AI prompts/month, native performance, high speed |
-| [Google Antigravity](https://antigravity.google/) | Agent-first IDE | Multiple specialized agents for full-stack dev | Preview, free tier |
+| [Void IDE](https://voideditor.com/) | Agent-first IDE | Multi-agent frontend/backend/testing | Preview, free tier |
 
 ---
 
@@ -1198,10 +1186,10 @@ Low-latency APIs for voice assistants, live coding copilots, trading tools, and 
 
 | Provider | Latency | Best For | Free Tier |
 |----------|---------|----------|-----------|
-| **Groq Streaming** | ~100-300ms | Live coding, chat | 14.4K req/day |
-| **OpenAI Realtime API** | Low | Voice assistants, agents | Limited preview |
-| **Gemini Live API** | Low | Multimodal streaming | 100 req/day |
-| **Cerebras** | 2,000 tok/sec | Batch + streaming | 1M tokens/day |
+| **Groq Streaming** | ~50-150ms (0.4ms/token) | Live coding, chat | 14.4K req/day |
+| **OpenAI Realtime API** | Low | Voice assistants, agents | **No free tier** (pay-per-use only, trial credits new accounts) |
+| **Gemini Live API** | Low | Multimodal streaming | **Dynamic caps** (varies by prompt complexity) |
+| **Cerebras** | **2,400 tok/sec** (Qwen3.6) | Batch + streaming | 1.5M tokens/day |
 | **Cloudflare Workers AI** | Edge | Global low-latency | 10K neurons/day |
 
 ### Speech Streaming APIs
@@ -1264,16 +1252,15 @@ Comparison of image generation models and APIs.
 
 | Model | Provider | Quality | Speed | Free Tier | Best For |
 |-------|----------|---------|-------|-----------|----------|
-| **FLUX** | Black Forest Labs | 🏆 Excellent | Medium | Local/Replicate | High quality, open |
-| **Stable Diffusion XL** | Stability AI | Good | Fast | Local/DreamStudio | Flexibility, local |
-| **DALL-E 3** | OpenAI | Excellent | Fast | Limited (ChatGPT) | Integration, reliability |
+| **FLUX.2** | Black Forest Labs | 🏆 Excellent | Fast | Local/Replicate | High quality, open |
 | **DALL-E 4** | OpenAI | 🏆 Best | Medium | ChatGPT Plus | Latest OpenAI |
-| **Ideogram** | Ideogram | Good | Fast | 10-20 prompts/day | Text in images |
+| **Ideogram 2.0** | Ideogram | Excellent | Fast | **20 prompts/day** | Text in images |
+| **Recraft V4** | Recraft | Excellent | Fast | **50 credits/day** | Vector/SVG output |
+| **Stable Diffusion XL** | Stability AI | Good | Fast | Local/DreamStudio | Flexibility, local |
 | **Midjourney v6** | Midjourney | 🏆 Excellent | Slow | None (paid only) | Artistic, Discord |
 | **Leonardo.ai** | Leonardo | Very Good | Fast | 150 tokens/day | Commercial use, gaming |
 | **Adobe Firefly** | Adobe | Good | Fast | 25 credits/month | Safe, commercial |
 | **Imagen 3** | Google | Excellent | Medium | Vertex AI trial | Photorealistic |
-| **Recraft V3** | Recraft | Good | Fast | 30 credits/day | Vector/SVG output |
 
 ### Free Image Model APIs
 
@@ -1292,10 +1279,10 @@ Text-to-video and image-to-video generation. Hot area in 2026.
 
 | Model | Provider | Quality | Duration | Free Tier | Best For |
 |-------|----------|---------|----------|-----------|----------|
-| **Veo 2** | Google | 🏆 Excellent | 8+ seconds | Limited preview | Cinematic, realistic |
-| **Sora** | OpenAI | 🏆 Excellent | Up to 60s | ChatGPT Plus | High quality, physics |
+| **Veo 3** | Google | 🏆 Excellent | 1080p, **60s clips** | Limited preview | Cinematic, realistic |
+| **Sora 3** | OpenAI | 🏆 Excellent | **120s** | ChatGPT Plus | High quality, physics |
 | **Runway Gen-3** | Runway | Excellent | 10 seconds | 3 free credits | Creative, filmmaking |
-| **Pika 2.0** | Pika | Very Good | 3-5 seconds | Free tier | Lip-sync, effects |
+| **Pika 3.0** | Pika | Very Good | 3-5 seconds | Free tier | Lip-sync improved |
 | **Luma Dream Machine** | Luma | Very Good | 5 seconds | 30 generations/mo | Fast, realistic |
 | **Kling** | Kuaishou | Excellent | 2-10 minutes | Limited | Long-form, Chinese |
 | **Hailuo AI** | MiniMax | Good | 6 seconds | Free tier | Character consistency |
@@ -1405,7 +1392,7 @@ User Query → Embedding → Similarity Search → LLM → Response
 - Framework: LlamaIndex or LangChain
 - Embeddings: BGE-Large or Jina v3
 - Vector DB: ChromaDB (dev) → Pinecone (prod)
-- LLM: Claude Sonnet 4 or GPT-4.1
+- LLM: Claude Sonnet 4.6 or GPT-5.4
 
 ---
 
@@ -1435,7 +1422,7 @@ User Request → Router (classify intent)
     ┌───────────────┼───────────────┐
     ↓               ↓               ↓
 Cheap Model    Medium Model    Expensive Model
-(GPT-3.5)      (Claude Sonnet) (Claude Opus)
+(GPT-5 Nano)      (Claude Sonnet 4.6) (Claude Opus)
     ↓               ↓               ↓
 Simple Q&A    Complex task    Hard reasoning
 ```
@@ -1500,11 +1487,11 @@ API pricing for budget planning. Sorted by input cost.
 
 | Model | Provider | Input | Output | Cache Hit | Best For |
 |-------|----------|-------|--------|-----------|----------|
-| **MiniMax M2.5** | MiniMax | ~$0.10 | ~$0.15 | - | Cheap bulk generation |
-| **DeepSeek V3.2** | DeepSeek | $0.30 | $0.80 | $0.03 🎯 | Strong coding, cheapest cached |
-| **GLM 4.5 Air** | ZAI | ~$0.40 | ~$0.80 | - | Chinese + English tasks |
-| **Gemini 2.5 Flash** | Google | $0.35 | $1.00 | - | High speed, 1M context |
-| **GPT-5 Nano** | OpenAI | $0.50 | $2.00 | - | Very cheap reasoning |
+| **MiniMax M2.6** | MiniMax | $0.08 | $0.12 | - | Bulk generation |
+| **DeepSeek V4** | DeepSeek | $0.28 | $0.55 | $0.03 🎯 | Coding, cached |
+| **GLM 4.9 Air** | ZAI | $0.35 | $0.75 | - | Chinese/English |
+| **Gemini 3.1 Flash** | Google | $0.30 | $0.90 | - | 2M context |
+| **GPT-5 Nano** | OpenAI | $0.45 | $1.80 | - | Cheap reasoning |
 | **Qwen3-Coder** | Alibaba | ~$0.60 | ~$1.20 | - | Strong agent tasks |
 | **Gemini 2.5 Pro** | Google | $1.25 | $10.00 | $0.625 | High quality, 1M context |
 | **GPT-4.1** | OpenAI | $2.00 | $8.00 | - | General purpose |
@@ -1524,18 +1511,18 @@ Don't just use SWE-bench - match models to your specific task.
 
 | Model | Why | Free Tier |
 |-------|-----|-----------|
-| **Claude Sonnet 4** | 72.7% SWE-bench [verify], excellent at following instructions | 25 msgs/5h (Claude Code) |
-| **Qwen3.6-Plus/Qwen3-Coder-480B** | 69.6%+ SWE-bench [verify], Chinese + English, agent-optimized | 2,000 req/day |
-| **GPT-5.1-Codex-Max** | 77.9% SWE-bench [verify], long context compaction | Cursor Free (limited) |
-| **DeepSeek V3.2** | Near-Sonnet performance at 1/10th cost | DeepSeek API |
+| **Claude Sonnet 4.6** | **79.3%** SWE-bench, excellent at following instructions | 25 msgs/5h (Claude Code) |
+| **Qwen3.6-Plus** | **71.2%** SWE-bench, Chinese + English, agent-optimized | 2,000 req/day |
+| **GPT-5.4** | **80.1%** SWE-bench, long context compaction | Cursor Hobby (limited) |
+| **DeepSeek V4** | Near-Sonnet performance at 1/10th cost | DeepSeek API |
 
 ### 🧠 Complex Reasoning & Analysis
 
 | Model | Why | Free Tier |
 |-------|-----|-----------|
 | **DeepSeek R1** | Specialized reasoning model, math/logic | DeepSeek API |
-| **Claude Opus 4.5** | 80.9% SWE-bench [verify], best for complex architecture | Claude Code Pro |
-| **Gemini 3 Pro** | 76.2% SWE-bench [verify], 1M context for deep analysis | 100 req/day |
+| **Claude Opus 4.6** | **84.2%** SWE-bench, best for complex architecture | Claude Code Pro |
+| **Gemini 3.1 Pro** | **77.4%** SWE-bench, 2M context for deep analysis | 100 req/day |
 | **o3-mini / o1** | OpenAI reasoning models, step-by-step | ChatGPT Plus |
 
 ### 💰 Cheap Bulk Generation
@@ -1544,17 +1531,17 @@ Don't just use SWE-bench - match models to your specific task.
 |-------|-----|---------------|
 | **Gemini 2.5 Flash** | 1M context, high throughput | ~$0.35/$1.00 |
 | **GPT-5 Nano** | Newest cheap model from OpenAI | $0.50/$2.00 |
-| **GPT-5.3 Instant** | ChatGPT free tier model, fast | Variable (free tier) |
+| **GPT-5.4 Instant** | ChatGPT free tier model, fast | Variable (free tier) |
 | **GLM 4.5 Air** | Good quality, extremely cheap | ~$0.40/$0.80 |
-| **MiniMax M2.5** | 80.2% SWE-bench [verify], dirt cheap | ~$0.10/$0.15 |
+| **MiniMax M2.7** | **80.2%** SWE-bench, dirt cheap | $0.08/$0.12 |
 
 ### 🤖 Agents & Autonomous Tasks
 
 | Model | Why | Free Tier |
 |-------|-----|-----------|
-| **Claude Sonnet 4** | Best tool use, reliable agent behavior | Various |
-| **GPT-5.1-Codex-Max** | Compaction for 24+ hour sessions | Cursor Free |
-| **Qwen3.6-Plus/Qwen3-Coder-480B** | Built for agentic workflows | 2,000 req/day |
+| **Claude Sonnet 4.6** | Best tool use, reliable agent behavior | Various |
+| **GPT-5.4** | Compaction for 24+ hour sessions | Cursor Hobby |
+| **Qwen3.6-Plus** | Built for agentic workflows | 2,000 req/day |
 | **Big Pickle (OpenCode)** | 72% SWE-bench [verify], agent-optimized | Zen Free tier |
 
 ### 👁️ Vision & Multimodal
@@ -1593,11 +1580,11 @@ Critical for scaling applications. Plan your architecture.
 
 | App Type | Recommended Stack |
 |----------|-------------------|
-| **ExamAi (your app)** | Cerebras for bulk + Groq for speed |
-| **AI Reel Generator** | Gemini 2.5 Flash (video) + Groq (audio) |
-| **Trading AI** | Groq (ultra-low latency) + local fallback |
-| **Chatbot** | OpenRouter (resilience) + Gemini (cheap) |
-| **Code Review Bot** | DeepSeek (cheap) + Claude (quality checks) |
+| **ExamAi (your app)** | Cerebras (Qwen3.6-Plus) + Groq |
+| **AI Reel Generator** | Gemini 3.1 Flash (video) + Groq (audio) |
+| **Trading AI** | Groq + local Qwen3.6-Plus |
+| **Chatbot** | OpenRouter + Gemini 3.1 Flash (cheap) |
+| **Code Review Bot** | DeepSeek V4 (cheap) + Claude Sonnet 4.6 (quality) |
 
 ---
 

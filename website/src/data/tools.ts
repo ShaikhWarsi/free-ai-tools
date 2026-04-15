@@ -441,34 +441,6 @@ export const tools: Tool[] = [
 
   // CLI Tools
   {
-    id: "qwen-code",
-    name: "Qwen Code",
-    category: "cli",
-    shortDescription: "2,000 req/day with Qwen3.6-Plus",
-    description: "Command-line AI workflow tool from Alibaba. Adapted from Gemini CLI with Qwen OAuth authentication.",
-    website: "https://github.com/QwenLM/qwen-code",
-    github: "https://github.com/QwenLM/qwen-code",
-    pricing: {
-      type: "free",
-      freeTier: "2,000 requests/day, 60 req/min",
-      creditCardRequired: false,
-    },
-    models: ["Qwen3.6-Plus", "Qwen3-Coder-480B"],
-    swrBenchScore: 69.6,
-    limits: {
-      requestsPerDay: 2000,
-      rateLimitPerMinute: 60,
-    },
-    tags: ["cli", "qwen", "oauth", "coding"],
-    deployment: "api",
-    openSource: true,
-    features: ["One-click auth", "Browser integration", "Multi-file support"],
-    pros: ["High free limits", "No credit card", "Strong Qwen models", "Open source"],
-    cons: ["Qwen models only", "Newer tool"],
-    useCases: ["CLI coding", "Qwen users", "Terminal workflows"],
-    featured: true,
-  },
-  {
     id: "gemini-cli",
     name: "Gemini CLI",
     category: "cli",

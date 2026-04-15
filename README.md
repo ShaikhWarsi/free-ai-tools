@@ -146,7 +146,6 @@ If this repo helped you build something or saved you money:
 
 | Tool | Pro-grade Models | Free Tier Limit | Credit Card |
 |------|------------------|-----------------|-------------|
-| [Qwen Code](#qwen-code) | Qwen3.6-Plus, Qwen3-Coder-480B | 2,000 req/day | No |
 | [Gemini CLI](#gemini-cli) | Gemini 3.1 Flash [verify: Pro paid] | 100-250 req/day | No |
 | [Rovo Dev CLI](#rovo-dev-cli) | Claude Sonnet 4 [verify], GPT-5 preview [verify] | 5M tokens/day | No |
 | [Warp](#warp) | GPT-4.1, Claude Opus 4.1 [verify] | 150 credits/month | No |
@@ -715,19 +714,6 @@ General-purpose chat interfaces with free tiers.
 Command-line tools for AI-assisted coding in your terminal.
 
 ### CLI Tools with Pro-Grade Models
-
-#### [Qwen Code](https://github.com/QwenLM/qwen-code)
-
-**Models:** Qwen3.6-Plus, Qwen3-Coder-480B (69.6%+ SWE-bench [verify])
-- 2,000 requests/day free tier via Qwen OAuth
-- 60 requests/minute rate limit
-- Command-line AI workflow tool (adapted from Gemini CLI)
-- One-click browser authentication
-- No credit card required
-
-**[GitHub](https://github.com/QwenLM/qwen-code)** | **[Documentation](https://github.com/QwenLM/qwen-code#readme)**
-
----
 
 #### [Gemini CLI](https://github.com/google-gemini/gemini-cli)
 

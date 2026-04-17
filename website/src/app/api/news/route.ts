@@ -7,59 +7,90 @@ export interface NewsItem {
   url: string;
 }
 
-const fallbackNewsData: NewsItem[] = [
-  {
-    date: "2026-04-10",
-    title: "GLM-5.1 Breaks into the Frontier Tier for Coding",
-    excerpt: "GLM-5.1 has reached #3 on Code Arena, surpassing Gemini 3.1 and GPT-5.4, and matching Claude Sonnet 4.6 in coding performance. Z.ai now holds the #1 open model rank close to the top overall.",
-    url: "https://news.smol.ai/issues/26-04-10-not-much",
-  },
-  {
-    date: "2026-04-09",
-    title: "Anthropic's Mythos and OpenAI's Cyber-Capable Models",
-    excerpt: "Anthropic's Mythos and OpenAI's upcoming restricted cyber-capable models are central to recent discussions. LangChain's Deep Agents deploy introduces an open memory, model-agnostic agent harness architecture.",
-    url: "https://news.smol.ai/issues/26-04-09-not-much",
-  },
-  {
-    date: "2026-04-08",
-    title: "Meta Superintelligence Labs Launches Muse Spark",
-    excerpt: "Meta Superintelligence Labs launched Muse Spark, a natively multimodal reasoning model featuring tool use, visual chain of thought, and multi-agent orchestration. Zhipu AI's GLM-5.1 is recognized as a leading open-weight model.",
-    url: "https://news.smol.ai/issues/26-04-08-not-much",
-  },
-  {
-    date: "2026-04-07",
-    title: "Anthropic @ $30B ARR, Project GlassWing and Claude Mythos Preview",
-    excerpt: "Anthropic strategically challenges OpenAI by announcing a jump from $19B ARR in March to $30B ARR in April. The company revealed Claude Mythos, restricted under Project Glasswing due to its dangerous capabilities.",
-    url: "https://news.smol.ai/issues/26-04-06-anthropic-mythos",
-  },
-  {
-    date: "2026-04-06",
-    title: "Hermes Agent and Open Training-Data Movement",
-    excerpt: "Hermes Agent is gaining attention as a leading open agent stack with features like self-improving skills, persistent memory, and a self-improvement loop. An open training-data movement for agents is emerging.",
-    url: "https://news.smol.ai/issues/26-04-07-not-much",
-  },
-];
 
 async function fetchIssuePage(url: string): Promise<{ title: string; excerpt: string } | null> {
   try {
-    const response = await fetch(url, { next: { revalidate: 3600 } });
+    const response = await fetch(url, { cache: 'no-store' });
     if (!response.ok) return null;
 
     const html = await response.text();
-    const titleMatch = html.match(/<h2[^>]*>([^<]+)<\/h2>/i);
-    const title = titleMatch ? titleMatch[1].trim() : null;
 
+    // Try to find the main content area - look for article or main tags
+    const mainContentMatch = html.match(/<(?:article|main)[^>]*>([\s\S]*?)<\/(?:article|main)>/i);
+    const content = mainContentMatch ? mainContentMatch[1] : html;
+
+    // Try multiple patterns for title, but skip navigation titles
+    let title: string | null = null;
+    const titlePatterns = [
+      /<h1[^>]*class="[^"]*title[^"]*"[^>]*>([^<]+)<\/h1>/i,
+      /<h1[^>]*>([^<]+)<\/h1>/i,
+      /<h2[^>]*class="[^"]*title[^"]*"[^>]*>([^<]+)<\/h2>/i,
+    ];
+
+    for (const pattern of titlePatterns) {
+      const match = content.match(pattern);
+      if (match) {
+        const potentialTitle = match[1].trim();
+        // Skip navigation/common titles
+        if (!potentialTitle.includes("Search") && !potentialTitle.includes("Back") && 
+            !potentialTitle.includes("Skip") && potentialTitle.length >= 10) {
+          title = potentialTitle;
+          break;
+        }
+      }
+    }
+
+    // Fallback: try to find title from <title> tag and clean it
+    if (!title) {
+      const titleTagMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
+      if (titleTagMatch) {
+        title = titleTagMatch[1].trim().replace(/\|.*$/, "").trim();
+      }
+    }
+
+    // Try to find excerpt from content paragraphs
     let excerpt = "";
-    if (title) {
-      const titleIndex = html.indexOf(`<h2>${title}</h2>`) || html.indexOf(`<h2 class="${title}"`);
-      const afterTitle = html.substring(html.indexOf(title) + title.length);
-      const paragraphMatch = afterTitle.match(/<p>([^<]+<strong>[^<]+<\/strong>[^<]*)<\/p>/i);
-      if (paragraphMatch) {
-        excerpt = paragraphMatch[1].replace(/<[^>]+>/g, "").trim();
-      } else {
-        const pMatch = afterTitle.match(/<p>([^<]+)<\/p>/i);
-        if (pMatch) {
-          excerpt = pMatch[1].replace(/<[^>]+>/g, "").trim();
+    const pMatches = content.match(/<p[^>]*>([\s\S]*?)<\/p>/gi);
+    if (pMatches) {
+      let introSkipped = false;
+      for (const p of pMatches) {
+        const text = p.replace(/<[^>]+>/g, "").trim();
+        
+        // Skip intro/summary paragraphs
+        if (text.includes("Subscribe") || 
+            text.includes("Newsletter") ||
+            text.includes("Back to issues") ||
+            text.includes("Skip to Main") ||
+            text.includes("Search") ||
+            text.includes("rss") ||
+            text.includes("Cmd+K") ||
+            text.includes("We checked") ||
+            text.includes("subreddits") ||
+            text.includes("Twitters") ||
+            text.includes("Discords") ||
+            text.startsWith("AI News for") ||
+            text.includes("AINews' website") ||
+            text.includes("Latent Space") ||
+            text.includes("opt in/out") ||
+            text.length < 30) {
+          continue;
+        }
+
+        // Skip the first paragraph after intro (likely a header/summary)
+        if (!introSkipped) {
+          introSkipped = true;
+          continue;
+        }
+
+        // Look for paragraphs that contain actual news content
+        // News paragraphs typically have: company names, technical terms, or specific actions
+        const newsKeywords = /OpenAI|Anthropic|Google|Meta|Microsoft|Amazon|Claude|GPT|LLM|model|AI|agent|released|launched|announced|introduced|unveiled/i;
+        if (newsKeywords.test(text) && 
+            text.length > 50 && 
+            text.split(' ').length > 10) {
+          const firstSentence = text.split(/[.!?]/)[0];
+          excerpt = firstSentence.trim() + (text.includes('.') ? '.' : '');
+          break;
         }
       }
     }
@@ -77,7 +108,7 @@ async function fetchIssuePage(url: string): Promise<{ title: string; excerpt: st
 async function fetchNewsFromSmolAI(): Promise<NewsItem[]> {
   try {
     const response = await fetch("https://news.smol.ai/issues/", {
-      next: { revalidate: 3600 },
+      cache: 'no-store',
     });
 
     if (!response.ok) {
@@ -85,32 +116,51 @@ async function fetchNewsFromSmolAI(): Promise<NewsItem[]> {
     }
 
     const html = await response.text();
+    console.log("Fetched HTML length:", html.length);
+    
     const newsItems: NewsItem[] = [];
 
-    const issueRegex = /\[Apr\s+(\d+)\s+[^\]]+?\s+Show details\]\(https:\/\/news\.smol\.ai\/issues\/(26-\d{2}-\d{2}-[^\)]+)\)/g;
+    // Try multiple regex patterns
+    const patterns = [
+      /https:\/\/news\.smol\.ai\/issues\/([^\s\)"']+)/g,
+      /news\.smol\.ai\/issues\/([a-z0-9\-]+)/gi,
+      /href="\/issues\/([^"]+)"/g,
+    ];
 
-    let match;
-    const currentYear = 2026;
     const urls: { url: string; date: string }[] = [];
+    const seenUrls = new Set();
 
-    while ((match = issueRegex.exec(html)) !== null && urls.length < 10) {
-      const day = match[1].padStart(2, "0");
-      const urlPath = match[2];
-      const url = `https://news.smol.ai/issues/${urlPath}`;
+    for (const pattern of patterns) {
+      let match;
+      while ((match = pattern.exec(html)) !== null && urls.length < 10) {
+        const urlPath = match[1];
+        const url = `https://news.smol.ai/issues/${urlPath}`;
 
-      const dateMatch = urlPath.match(/26-(\d{2})-(\d{2})/);
-      let date: string;
-      if (dateMatch) {
-        const month = dateMatch[1];
-        const dayFromUrl = dateMatch[2];
-        date = `${currentYear}-${month}-${dayFromUrl}`;
-      } else {
-        date = `${currentYear}-04-${day}`;
-      }
+        if (seenUrls.has(url)) continue;
+        seenUrls.add(url);
 
-      if (!urls.some((item) => item.url === url)) {
+        // Try to extract date from URL
+        const dateMatch = urlPath.match(/(\d{2})-(\d{2})-(\d{2})/);
+        let date: string;
+        if (dateMatch) {
+          const year = `20${dateMatch[1]}`;
+          const month = dateMatch[2];
+          const day = dateMatch[3];
+          date = `${year}-${month}-${day}`;
+        } else {
+          // Fallback to current date
+          date = new Date().toISOString().split('T')[0];
+        }
+
         urls.push({ url, date });
       }
+      if (urls.length > 0) break;
+    }
+
+    console.log("Found URLs:", urls.length);
+
+    if (urls.length === 0) {
+      return [];
     }
 
     const fetchPromises = urls.slice(0, 5).map(async ({ url, date }) => {
@@ -126,14 +176,16 @@ async function fetchNewsFromSmolAI(): Promise<NewsItem[]> {
     const results = await Promise.all(fetchPromises);
     newsItems.push(...results.filter((item) => item.title !== "Untitled"));
 
+    console.log("Fetched news items:", newsItems.length);
+
     if (newsItems.length > 0) {
       return newsItems.slice(0, 5);
     }
 
-    return fallbackNewsData;
+    return [];
   } catch (error) {
     console.error("Error fetching news from smol.ai:", error);
-    return fallbackNewsData;
+    return [];
   }
 }
 

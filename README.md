@@ -732,6 +732,9 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Rovo Dev CLI](https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface)
 
+> [!IMPORTANT]  
+> Rovo Dev CLI isn’t available during a Rovo Dev Standard trial. To use this feature, you need a paid Rovo Dev Standard subscription.
+
 **Models:** Claude Sonnet 4 [verify], GPT-5 preview [verify]
 - 5M tokens/day free tier
 - No credit card required during beta

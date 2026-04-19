@@ -904,6 +904,23 @@ Command-line tools for AI-assisted coding in your terminal.
 
 ---
 
+#### [Bernstein](https://bernstein.run)
+
+**Models:** Any CLI agent's model (Claude Sonnet 4.6, GPT-5, Gemini 2.5 Pro, local via Ollama, etc.)
+- Open-source (Apache 2.0) multi-agent orchestrator that runs 18 CLI coding agents in parallel — Claude Code, Codex, OpenAI Agents SDK, Cursor, Aider, Gemini CLI, Amp, Cody, Continue, Goose, Kilo, Kiro, Ollama, OpenCode, Qwen, IaC, Cloudflare, plus a generic CLI wrapper
+- Deterministic Python scheduler — no LLM in the coordination loop, runs are reproducible and auditable
+- Git worktree isolation per agent enables parallel edits without collisions
+- Janitor verifies outputs against quality gates (tests pass, files exist, lints clean) before merging to main
+- HMAC-chained audit trail for bit-identical replay
+- MCP server mode and A2A protocol support
+- BYOK only — uses whatever API keys the underlying CLI agent needs; no credit card required
+- ~9K monthly PyPI downloads
+- **Install:** `pipx install bernstein` (also `pip`, `uv`, `brew`, `dnf copr`, `npx bernstein-orchestrator`)
+
+**[GitHub](https://github.com/chernistry/bernstein)** | **[Website](https://bernstein.run)** | **[Docs](https://bernstein.readthedocs.io/)**
+
+---
+
 ### CLI Tools with Basic Models
 
 #### [Claude Code](https://www.anthropic.com/claude-code)

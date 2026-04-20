@@ -1056,6 +1056,7 @@ Running open-weight frontier models locally provides unlimited coding assistance
 
 **Local Model Tools:**
 - **[Ollama](https://ollama.com/)** - Run frontier models locally
+- **[LM Studio](https://lmstudio.ai/)** - Easy desktop app for local LLMs (no terminal required)
 
 **Notable Local Models (2026):**
 
@@ -1375,6 +1376,8 @@ Comparison of image generation models and APIs.
 | **Leonardo.ai** | Leonardo | Very Good | Fast | 150 tokens/day | Commercial use, gaming |
 | **Adobe Firefly** | Adobe | Good | Fast | 25 credits/month | Safe, commercial |
 | **Imagen 3** | Google | Excellent | Medium | Vertex AI trial | Photorealistic |
+| **DiffusionBee** | Local | Good | Fast | Local unlimited | Easy setup, open-source |
+| **ComfyUI** | Local | Good | Fast | Local unlimited | Advanced, node-based |
 
 ### Free Image Model APIs
 

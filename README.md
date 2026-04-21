@@ -1209,6 +1209,7 @@ AI-powered tools for conversational data analysis and narrative visualization.
 | [Datawrapper](https://datawrapper.de) | Publishing | Publish-ready charts in seconds, journalism-focused |
 | [Looker Studio](https://lookerstudio.google.com) | Marketing Data | Seamless Google Analytics/Ads integration |
 | [Power BI Desktop](https://powerbi.microsoft.com) | Microsoft reports | Copilot recommendations, local report building |
+| [AI for Database](https://aifordatabase.com) | Natural language DB queries | Freemium - free tier available | Connect any DB (PostgreSQL, MySQL, MongoDB) and query in plain English — no SQL needed, with self-refreshing dashboards and workflow automation |
 
 ---
 

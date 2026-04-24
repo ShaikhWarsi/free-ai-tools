@@ -1818,8 +1818,8 @@ Benchmark your models before production.
 | **RAGAS** | RAG evaluation | Open source |
 | **DeepEval** | LLM unit testing | Open source |
 | **Arize Phoenix** | Observability | Generous free tier |
-| **Weights & Biases** | Experiment tracking | Academic free |
-
+| **Weights & Biases** | Experiment tracking | Academic free | 
+| **[Prompt Template Linter](https://uatgpt.com/tools/prompt-linter/)** | Lint system prompts — 12 failure classes, 0-100 score | Free, client-side |
 ---
 
 ## 📐 Structured Output Tools

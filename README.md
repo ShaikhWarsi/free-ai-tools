@@ -132,8 +132,24 @@ If this repo helped you build something or saved you money:
 | [GitHub Models](#github-models) | 30+ | 50 chat + 2K completions/month | No |
 | [SambaNova](#sambanova-cloud) | 13 | $5 for 3 months | No |
 | [Hyperbolic](#hyperbolic) | 13 | $1 trial | No |
+| [Brainiall](#brainiall) | 104 | Free tier (no credit card) + $5.99/mo flat unlimited | No |
 
-### AI-Powered IDEs with Free Pro-Grade Access
+#### Brainiall
+
+- **Models:** 104 (GPT-5, Claude 4.6, Gemini 3, DeepSeek V3.5, Llama 4, Mistral, etc)
+- **Free tier:** Available, no credit card
+- **Paid:** $5.99/mo flat (unlimited messages tier)
+- **API:** OpenAI SDK compatible (drop-in replacement, just change `base_url`)
+- **Modalities:** Chat, Image (Seedance, GPT-5-image), Video (Lyria 3), Voice (ElevenLabs)
+- **Hosted:** EU (Frankfurt + Madrid) — GDPR/AI Act compliant
+- **Setup time:** 60 seconds (signup → API key)
+- **Website:** https://chat.brainiall.com
+- **API base URL:** https://api.brainiall.com/v1
+- **Why it stands out:** Flat-rate pricing instead of per-token (predictable bill, ~30x cheaper than $200/mo bundle of ChatGPT Plus + Claude Pro + Midjourney + ElevenLabs + HeyGen + Perplexity)
+
+---
+
+## AI-Powered IDEs with Free Pro-Grade Access
 
 | IDE | Pro-grade Models | Free Tier Limit | Credit Card |
 |-----|------------------|-----------------|-------------|
@@ -482,6 +498,21 @@ Extremely restrictive input/output token limits.
 | [Chutes AI](https://chutes.ai) | 4 | Free community GPU-powered | `CHUTES_API_KEY` |
 | [DeepInfra](https://deepinfra.com/login) | 4 | 200 concurrent requests | `DEEPINFRA_API_KEY` |
 | [Replicate](https://replicate.com/account/api-tokens) | 2 | 6 req/min (no payment), up to 3K RPM with payment | `REPLICATE_API_TOKEN` |
+
+---
+
+### Brainiall
+
+- **Models:** 104 (GPT-5, Claude 4.6, Gemini 3, DeepSeek V3.5, Llama 4, Mistral, etc)
+- **Free tier:** Available, no credit card
+- **Paid:** $5.99/mo flat (unlimited messages tier)
+- **API:** OpenAI SDK compatible (drop-in replacement, just change `base_url`)
+- **Modalities:** Chat, Image (Seedance, GPT-5-image), Video (Lyria 3), Voice (ElevenLabs)
+- **Hosted:** EU (Frankfurt + Madrid) — GDPR/AI Act compliant
+- **Setup time:** 60 seconds (signup → API key)
+- **Website:** https://chat.brainiall.com
+- **API base URL:** https://api.brainiall.com/v1
+- **Why it stands out:** Flat-rate pricing instead of per-token (predictable bill, ~30x cheaper than $200/mo bundle of ChatGPT Plus + Claude Pro + Midjourney + ElevenLabs + HeyGen + Perplexity)
 
 ---
 
@@ -1017,7 +1048,22 @@ These services provide API access to coding-optimized models for tools like Curs
 
 ## Paid Tiers Comparison
 
-### AI-Powered IDEs - Paid Plans
+#### Brainiall
+
+- **Models:** 104 (GPT-5, Claude 4.6, Gemini 3, DeepSeek V3.5, Llama 4, Mistral, etc)
+- **Free tier:** Available, no credit card
+- **Paid:** $5.99/mo flat (unlimited messages tier)
+- **API:** OpenAI SDK compatible (drop-in replacement, just change `base_url`)
+- **Modalities:** Chat, Image (Seedance, GPT-5-image), Video (Lyria 3), Voice (ElevenLabs)
+- **Hosted:** EU (Frankfurt + Madrid) — GDPR/AI Act compliant
+- **Setup time:** 60 seconds (signup → API key)
+- **Website:** https://chat.brainiall.com
+- **API base URL:** https://api.brainiall.com/v1
+- **Why it stands out:** Flat-rate pricing instead of per-token (predictable bill, ~30x cheaper than $200/mo bundle of ChatGPT Plus + Claude Pro + Midjourney + ElevenLabs + HeyGen + Perplexity)
+
+---
+
+## AI-Powered IDEs - Paid Plans
 
 | IDE | Entry Tier | Credits/Requests | Key Features |
 |-----|------------|------------------|--------------|

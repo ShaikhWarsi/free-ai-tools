@@ -292,6 +292,16 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 
 ---
 
+#### [OfoxAI](https://ofox.ai)
+
+Unified API gateway for 100+ LLMs. OpenAI and Anthropic SDK-compatible. China-friendly with Hong Kong direct access (100-300ms latency). No monthly fees, pay per token.
+
+**Limits:** Not published | **1 free model**
+
+- [GLM-4.7-Flash](https://ofox.ai/models/z-ai/glm-4.7-flash:free) (200K context, 128K output, $0/M input, $0/M output)
+
+---
+
 #### [Google AI Studio](https://aistudio.google.com)
 
 Data is used for training when used outside UK/CH/EEA/EU.

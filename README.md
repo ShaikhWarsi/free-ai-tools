@@ -1242,6 +1242,7 @@ Professional-grade content creation with generous free tiers.
 | [Suno AI](https://suno.ai) | Music | 50 credits/day (~10 tracks) | Complete songs with vocals and instruments |
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
+| [LandscapioAI](https://www.landscapioai.com/) | Landscape design images | Free daily use; no credit card | Turns yard photos into AI landscape redesign concepts and cost estimates |
 
 ---
 

@@ -1242,6 +1242,7 @@ Professional-grade content creation with generous free tiers.
 | [Suno AI](https://suno.ai) | Music | 50 credits/day (~10 tracks) | Complete songs with vocals and instruments |
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
+| [Punch Needle Generator](https://www.punchneedle.co.il/en) | Embroidery patterns | 5 patterns/day | AI-generated punch needle patterns with color-coded yarn maps; PDF/PNG/SVG export |
 
 ---
 

@@ -1300,6 +1300,9 @@ Professional-grade content creation with generous free tiers.
 | [Surfer SEO](https://surferseo.com) | Content optimization |
 | [Jasper](https://jasper.ai) | AI copywriting with brand voice |
 | [Writesonic](https://writesonic.com) | Scalable copywriting |
+| [TinyTools — SEO Meta Tag Generator](https://tinytools-smoky.vercel.app/) | Generate SEO + Open Graph meta tags in one paste, browser-based, no signup |
+| [TinyTools — AI Robots.txt Generator](https://tinytools-smoky.vercel.app/) | Generate robots.txt with rules for AI crawlers (GPTBot, ClaudeBot, Google-Extended, etc.), free and open source |
+| [TinyTools — OG Image Generator](https://tinytools-smoky.vercel.app/) | Generate Open Graph social-share images directly in the browser, no signup |
 
 ---
 
@@ -1314,6 +1317,7 @@ Professional-grade content creation with generous free tiers.
 | [Zed](https://zed.dev) | AI IDE | 50 AI prompts/month, native performance, high speed |
 | [Void IDE](https://voideditor.com/) | Agent-first IDE | Multi-agent frontend/backend/testing | Preview, free tier |
 | [MemoryPalace](https://github.com/milla-jovovich/mempalace) | AI Memory System | 96.6% LongMemEval — memory palace technique for AI conversations | Free, open source |
+| [TinyTools — AI Background Remover](https://tinytools-smoky.vercel.app/) | Image BG Removal | Runs entirely in your browser (no upload), built on ONNX Runtime; open source | Free, no signup |
 
 ---
 

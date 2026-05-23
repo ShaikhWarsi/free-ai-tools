@@ -1250,6 +1250,7 @@ Professional-grade content creation with generous free tiers.
 | [Leonardo.Ai](https://leonardo.ai) | Images | 150 tokens/day (~70 images) | Commercial use allowed |
 | [Recraft AI](https://recraft.ai) | Vector/SVG | 30 credits/day | Infinitely scalable icons and logos |
 | [Ideogram](https://ideogram.ai) | Images | 10-20 prompts/day | Perfect text rendering, "Magic Prompt" |
+| [igly.ai](https://igly.ai) | Image Editing | Free credits available | Background removal, inpainting, upscaling, and generative fill |
 | [Suno AI](https://suno.ai) | Music | 50 credits/day (~10 tracks) | Complete songs with vocals and instruments |
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |

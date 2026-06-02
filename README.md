@@ -1036,6 +1036,17 @@ These services provide API access to coding-optimized models for tools like Curs
 
 **[Pricing](https://www.cerebras.ai/pricing)** | **[API Docs](https://inference-docs.cerebras.ai/)** | **[Integrations](https://inference-docs.cerebras.ai/integrations/)**
 
+### [CoderPlan](https://coderplan.ai/)
+
+- **Pay-as-you-go API gateway** — ~70% below official pricing
+- Claude, GPT-4o, Gemini, DeepSeek, Grok and 50+ models
+- OpenAI-compatible API (works with Claude Code, Cursor, Cline, Codex CLI)
+- ¥10 (~$1.5) minimum top-up — Alipay, WeChat Pay
+- HK/Singapore nodes — low latency from China, no VPN required
+
+**[Pricing](https://coderplan.ai/pricing)** | **[Docs](https://docs.coderplan.ai)** | **[API Status](https://status.coderplan.ai)**
+
+---
 ---
 
 ## Paid Tiers Comparison

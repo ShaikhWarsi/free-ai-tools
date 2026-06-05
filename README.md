@@ -491,6 +491,7 @@ Extremely restrictive input/output token limits.
 | [Hyperbolic](https://app.hyperbolic.ai/) | $1 | Permanent | DeepSeek, Llama, Qwen, GPT-OSS |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | $5 | 3 months | Llama, Qwen, DeepSeek |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 1M tokens | Permanent | DeepSeek, Llama, Mistral, Gemma |
+| [CoderPlan](https://coderplan.ai/) | ¥10 (~$1.50) | Permanent | OpenAI-compatible API, Claude/GPT/Gemini/DeepSeek/Grok, pay-per-use after credit |
 
 ### Additional Free API Providers
 
@@ -1035,6 +1036,16 @@ These services provide API access to coding-optimized models for tools like Curs
 - **Paid tiers:** Developer ($10+ self-serve), Enterprise (custom pricing)
 
 **[Pricing](https://www.cerebras.ai/pricing)** | **[API Docs](https://inference-docs.cerebras.ai/)** | **[Integrations](https://inference-docs.cerebras.ai/integrations/)**
+
+### [CoderPlan](https://coderplan.ai/)
+
+- **¥10 (~$1.50) free trial credit** for new users, no credit card required
+- Models: Claude (Sonnet 4, Opus 4.6), GPT (4o, o3), Gemini (2.5 Pro, 2.5 Flash), DeepSeek (R1, V3), Grok (3, 3 Mini)
+- OpenAI-compatible API — works with Claude Code, Codex CLI, Gemini CLI, Cursor, Continue.dev
+- After free credit: pay-per-use at ~70% of official API rates
+- Payment: Alipay, WeChat Pay
+
+**[Get API Key](https://coderplan.ai/)** | **[API Docs](https://docs.coderplan.ai/)**
 
 ---
 

@@ -1401,6 +1401,7 @@ Comparison of image generation models and APIs.
 | **Adobe Firefly** | Adobe | Good | Fast | 25 credits/month | Safe, commercial |
 | **Imagen 3** | Google | Excellent | Medium | Vertex AI trial | Photorealistic |
 | **DiffusionBee** | Local | Good | Fast | Local unlimited | Easy setup, open-source |
+| **Seedream 5.0** | Seedream AI Studio | Excellent | Fast | **Free tier** | Seedream 5.0/4.5/4.0 + Kling 2.1 video |
 | **ComfyUI** | Local | Good | Fast | Local unlimited | Advanced, node-based |
 
 ### Free Image Model APIs
@@ -1411,6 +1412,7 @@ Comparison of image generation models and APIs.
 | **Pollinations** | Various | Unlimited | No signup |
 | **HuggingFace** | SDXL/FLUX | $0.10 credits | Inference API |
 | **Leonardo** | Phoenix | 150 tokens/day | Commercial OK |
+| **Seedream AI Studio** | Seedream 5.0/4.5/4.0 | Free tier | Image + Kling 2.1 video animation |
 
 ---
 
@@ -1427,6 +1429,7 @@ Text-to-video and image-to-video generation. Hot area in 2026.
 | **Luma Dream Machine** | Luma | Very Good | 5 seconds | 30 generations/mo | Fast, realistic |
 | **Kling** | Kuaishou | Excellent | 2-10 minutes | Limited | Long-form, Chinese |
 | **Hailuo AI** | MiniMax | Good | 6 seconds | Free tier | Character consistency |
+| **Seedream AI Studio** | Seedream/Kling | Excellent | 5-30 seconds | **Free tier** | Image gen (Seedream 5.0) + one-click video (Kling 2.1) |
 | **Stable Video Diffusion** | Stability | Good | 4 seconds | Local | Open, flexible |
 
 ### Video API Pricing (approximate)

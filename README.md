@@ -1086,6 +1086,15 @@ These services provide API access to coding-optimized models for tools like Curs
 
 **[Pricing](https://www.cerebras.ai/pricing)** | **[API Docs](https://inference-docs.cerebras.ai/)** | **[Integrations](https://inference-docs.cerebras.ai/integrations/)**
 
+### [Pinstripes](https://pinstripes.io)
+
+- Pay-as-you-go, no free tier — low-cost starting at **$0.10/M tokens**
+- Models: DeepSeek V4 Flash ($0.10/M), GLM-4.5-Air ($0.125/M), Qwen3-35B ($0.14/M), MiniMax M2.7 ($0.255/M)
+- OpenAI-compatible API (`https://pinstripes.io/v1`)
+- Works with Cursor, Continue.dev, Cline, RooCode, etc.
+
+**[Pricing](https://pinstripes.io)** | **[API Docs](https://pinstripes.io/v1)**
+
 ---
 
 ## Paid Tiers Comparison

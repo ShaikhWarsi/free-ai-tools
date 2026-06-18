@@ -681,6 +681,18 @@ Full-featured integrated development environments with built-in AI assistance.
 
 ---
 
+#### [Roblox GUI Maker](https://robloxguimaker.dev/)
+
+**Models:** Not publicly specified [verify]
+- Browser-based Roblox Studio ScreenGui, HUD, menu, and Lua UI starter-code planner
+- Free to use; no paid tier listed
+- No credit card required [verify]
+- Focused on Roblox UI planning rather than general full-stack app generation
+
+**[Website](https://robloxguimaker.dev/)**
+
+---
+
 ### Additional 2026 AI Chat Platforms
 
 General-purpose chat interfaces with free tiers.

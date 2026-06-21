@@ -1480,6 +1480,7 @@ Text-to-video and image-to-video generation. Hot area in 2026.
 | **Luma Dream Machine** | Luma | Very Good | 5 seconds | 30 generations/mo | Fast, realistic |
 | **Kling** | Kuaishou | Excellent | 2-10 minutes | Limited | Long-form, Chinese |
 | **Hailuo AI** | MiniMax | Good | 6 seconds | Free tier | Character consistency |
+| **ImagineClip** | ImagineClip | Good | Short social clips | Free plan available | Avatar clips, stylized scenes |
 | **Stable Video Diffusion** | Stability | Good | 4 seconds | Local | Open, flexible |
 
 ### Video API Pricing (approximate)

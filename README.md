@@ -453,6 +453,7 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Hyperbolic](https://app.hyperbolic.ai/) | $1 | Permanent | DeepSeek, Llama, Qwen, GPT-OSS |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | $5 | 3 months | Llama, Qwen, DeepSeek |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 1M tokens | Permanent | DeepSeek, Llama, Mistral, Gemma |
+| [Prism API](https://go165.github.io/prism-api-promo/) | 1-5 platform credits | Signup | Independent OpenAI-compatible gateway; GPT/Claude/Gemini families; crypto-friendly recharge |
 
 ### Additional Free API Providers
 
@@ -1086,6 +1087,16 @@ These services provide API access to coding-optimized models for tools like Curs
 
 **[Pricing](https://www.cerebras.ai/pricing)** | **[API Docs](https://inference-docs.cerebras.ai/)** | **[Integrations](https://inference-docs.cerebras.ai/integrations/)**
 
+### [Prism API](https://go165.github.io/prism-api-promo/)
+
+- Independent OpenAI-compatible gateway for overseas developers
+- Recent GPT-5.5 usage math works out to about $0.88 per 1M output tokens after the current 5x recharge multiplier
+- GPT, Claude, Gemini, and Antigravity model families
+- Crypto-friendly recharge and voucher options; Google signup can receive trial platform credits
+- Not an official OpenAI endpoint and not for Mainland China users
+
+**[Product Page](https://go165.github.io/prism-api-promo/)** | **[API Base](https://sub2api.558686.xyz/v1)**
+
 ---
 
 ## Paid Tiers Comparison
@@ -1686,6 +1697,7 @@ API pricing for budget planning. Sorted by input cost.
 | **GLM 4.9 Air** | ZAI | $0.35 | $0.75 | - | Chinese/English |
 | **Gemini 3.1 Flash** | Google | $0.30 | $0.90 | - | 2M context |
 | **GPT-5 Nano** | OpenAI | $0.45 | $1.80 | - | Cheap reasoning |
+| **GPT-5.5** | Prism API | [verify] | ~$0.88 | - | Low-cost GPT-5.5 output via independent gateway |
 | **Qwen3-Coder** | Alibaba | ~$0.60 | ~$1.20 | - | Strong agent tasks |
 | **Gemini 2.5 Pro** | Google | $1.25 | $10.00 | $0.625 | High quality, 1M context |
 | **GPT-4.1** | OpenAI | $2.00 | $8.00 | - | General purpose |

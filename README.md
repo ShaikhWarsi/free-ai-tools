@@ -68,12 +68,6 @@ If this repo helped you build something or saved you money:
 
 **2026-06-25**
 - 🔄 Major model verification and name alignment: Migrated old placeholders to official **Claude Fable 5**, **Claude Opus 4.8**, and **GPT-5.5 (Instant/Thinking/Pro)** architectures.
-- 🆕 Added **OpenCode** (167k⭐ OSS CLI), **AWS Kiro** (full spec-driven family), **Xiaomi MiMo Token Plan** (Chinese coding subscription)
-- 🧹 Removed weak/no-longer-free items from Free LLM providers: Cohere (non-commercial only), GitHub Models (Copilot-required), SambaNova/Hyperbolic (trial-only), HuggingFace (~$0.10/mo), Vercel ($5/mo), Mistral Codestral, Together AI, iFlow (7-day key), Perplexity API
-- 🔄 Updated Gemini CLI entry: 3.1 Pro is paid-only; 3 Flash is the free tier (1,500 req/day)
-- 🔄 Pricing refresh: Windsurf (Mar 18), Trae (Feb 24), Qoder (Apr 30), GitHub Copilot (Jun 1) billing changes
-- ➕ Added GitHub Copilot Max tier ($100/mo, $200 AI Credits) and Claude Haiku 4.5
-- 🐛 Fixed stale Cursor / Qoder / Windsurf / GitHub Copilot pricing throughout
 
 **2026-06-16**
 - 🆕 Added **OpenCode** (167k⭐ OSS CLI), **AWS Kiro** (full spec-driven family), **Xiaomi MiMo Token Plan** (Chinese coding subscription)

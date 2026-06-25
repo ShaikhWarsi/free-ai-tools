@@ -8,7 +8,7 @@ export const categories: Category[] = [
     description: "Free and low-cost API providers for GPT, Claude, Gemini, and open-source models",
     icon: "Zap",
     color: "#3B82F6",
-    toolCount: 20,
+    toolCount: 10,
     featured: true,
   },
   {
@@ -18,7 +18,7 @@ export const categories: Category[] = [
     description: "Full-featured development environments with built-in AI coding assistance",
     icon: "Code2",
     color: "#8B5CF6",
-    toolCount: 12,
+    toolCount: 7,
     featured: true,
   },
   {
@@ -38,7 +38,7 @@ export const categories: Category[] = [
     description: "Run open-weight frontier models locally for unlimited offline coding",
     icon: "Cpu",
     color: "#F59E0B",
-    toolCount: 8,
+    toolCount: 6,
     featured: true,
   },
   {
@@ -48,7 +48,7 @@ export const categories: Category[] = [
     description: "Retrieval-Augmented Generation tools for document Q&A systems",
     icon: "Search",
     color: "#F43F5E",
-    toolCount: 12,
+    toolCount: 7,
     featured: true,
   },
   {
@@ -58,7 +58,7 @@ export const categories: Category[] = [
     description: "Frameworks for building autonomous AI agents and workflows",
     icon: "Bot",
     color: "#6366F1",
-    toolCount: 10,
+    toolCount: 5,
     featured: true,
   },
   {
@@ -68,7 +68,7 @@ export const categories: Category[] = [
     description: "Speech-to-text and text-to-speech models and APIs",
     icon: "Mic",
     color: "#06B6D4",
-    toolCount: 8,
+    toolCount: 4,
     featured: false,
   },
   {
@@ -78,7 +78,7 @@ export const categories: Category[] = [
     description: "Image generation models and APIs including FLUX, DALL-E, Stable Diffusion",
     icon: "Image",
     color: "#EC4899",
-    toolCount: 10,
+    toolCount: 6,
     featured: false,
   },
   {
@@ -88,7 +88,7 @@ export const categories: Category[] = [
     description: "Text-to-video and image-to-video generation APIs",
     icon: "Video",
     color: "#8B5CF6",
-    toolCount: 8,
+    toolCount: 4,
     featured: false,
   },
   {
@@ -98,7 +98,7 @@ export const categories: Category[] = [
     description: "Production-ready vector storage for embeddings and semantic search",
     icon: "Database",
     color: "#14B8A6",
-    toolCount: 10,
+    toolCount: 3,
     featured: true,
   },
   {
@@ -108,7 +108,7 @@ export const categories: Category[] = [
     description: "Serverless GPU providers and model hosting platforms",
     icon: "Server",
     color: "#F97316",
-    toolCount: 8,
+    toolCount: 3,
     featured: false,
   },
   {
@@ -118,7 +118,7 @@ export const categories: Category[] = [
     description: "Tools for benchmarking and evaluating AI models and applications",
     icon: "BarChart3",
     color: "#64748B",
-    toolCount: 6,
+    toolCount: 3,
     featured: false,
   },
   {
@@ -128,7 +128,7 @@ export const categories: Category[] = [
     description: "Text embedding APIs essential for RAG and semantic search",
     icon: "Layers",
     color: "#10B981",
-    toolCount: 6,
+    toolCount: 3,
     featured: false,
   },
   {
@@ -138,7 +138,7 @@ export const categories: Category[] = [
     description: "No-code and low-code platforms for building AI workflows",
     icon: "Workflow",
     color: "#0EA5E9",
-    toolCount: 7,
+    toolCount: 0,
     featured: false,
   },
   {
@@ -148,7 +148,7 @@ export const categories: Category[] = [
     description: "Tools for AI agents to control browsers and web scraping",
     icon: "Globe",
     color: "#D946EF",
-    toolCount: 7,
+    toolCount: 3,
     featured: false,
   },
   {

@@ -162,6 +162,7 @@ If this repo helped you build something or saved you money:
 | Tool | Starting Price | Free Tier | Features | Credit Card |
 |------|----------------|-----------|-----------|-------------|
 | [PrixAI](https://www.prixai.xyz) | Free / $10 paid plan | Free trial available | Unlimited reviews Auto-fix PRs, issue planning | No |
+[Auferet](https://auferet.com) - AI game master with persistent memory for your characters and uploaded lore; solo or multiplayer, with 5e and Pathfinder 2e modes.
 | [Bito](#bito) | Free / $25 paid plans | Free trial available | AI PR reviews/Unlimited reviews | No |
 | [Sourcery](#sourcery) | ~$12/month | Free trial available | Code quality reviews | No |
 

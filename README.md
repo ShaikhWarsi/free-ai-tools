@@ -834,6 +834,23 @@ Command-line tools for AI-assisted coding in your terminal.
 
 ---
 
+#### [API Cup](https://apicup.com)
+
+**Pay with crypto. 70% cheaper than OpenAI. No KYC.**
+
+| Model | Input (per 1M) | Output (per 1M) |
+|-------|----------------|-----------------|
+| **DeepSeek V4 / R1** | $0.60 | $2.40 |
+| **Qwen3.7-Max** | $1.20 | $4.80 |
+| **Kimi K2.7** | $0.80 | $3.20 |
+| **GLM 5.2 Flash** | $0.05 | $0.20 |
+
+> 90+ models across text, image, TTS, and ASR. OpenAI-compatible API. Pay with USDC/USDT/SOL/BTC/ETH via Paymento.
+
+**[Website](https://apicup.com)** | **[Pricing](https://apicup.com/pricing)** | **[GitHub](https://github.com/agentcountry/apicup)**
+
+---
+
 #### [Claude Code](https://www.anthropic.com/claude-code)
 
 **Models:** Claude Sonnet 4.6, Claude Opus 4.8 [verify: paid-only], Haiku 4.5

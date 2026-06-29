@@ -1250,6 +1250,7 @@ Text-to-video and image-to-video generation. Hot area in 2026.
 | **Kling** | Kuaishou | Excellent | 2-10 minutes | Limited | Long-form, Chinese |
 | **Hailuo AI** | MiniMax | Good | 6 seconds | Free tier | Character consistency |
 | **Stable Video Diffusion** | Stability | Good | 4 seconds | Local | Open, flexible |
+| **cv.cm/v** | Cloud Clipboard | Excellent | 2K, multi-shot up to 60s | 100 credits, no card | Queue-free Seedance 2.0, REST API, no signup |
 
 ### Video API Pricing (approximate)
 

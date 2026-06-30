@@ -1090,6 +1090,7 @@ Professional-grade content creation with generous free tiers.
 | [QuillBot](https://quillbot.com) | Rewriting | 125 words/time | Fluency & Standard modes |
 | [DeepL](https://deepl.com) | Translation | Basic Free | Incognito sensitive mode |
 | [MemoryPalace](https://github.com/milla-jovovich/mempalace) | AI Memory | Free, open source | 96.6% LongMemEval — memory palace technique for AI |
+| [AICareerPivot](https://ai-career-pivot.com) | Career Planning | Free | Personalized career transition roadmaps, skill gap analysis, job tracking |
 
 ---
 

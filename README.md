@@ -879,6 +879,15 @@ These services provide API access to coding-optimized models for tools like Curs
 
 **[Pricing](https://www.cerebras.ai/pricing)**
 
+### [AI Router](https://ai-router.dev/)
+
+- New-user onboarding: **20U total** (`5U` available on signup, `15U` unlocked after top-up)
+- OpenAI-compatible API for ChatGPT-style tools and SDKs
+- API keys with usage and token/cost visibility
+- Works with Cursor, Continue.dev, Cline, Open WebUI, LiteLLM, and other OpenAI-compatible clients
+
+**[Pricing](https://ai-router.dev/pricing/)**
+
 ---
 
 ## Paid Tiers Comparison

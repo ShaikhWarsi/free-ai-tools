@@ -147,6 +147,7 @@ If this repo helped you build something or saved you money:
 | [Cloudflare Workers AI](#cloudflare-workers-ai) | 47+ | 10K neurons/day | No |
 | [Cerebras](#cerebras) | 4 | 1M tokens/day | No |
 | [Mistral La Plateforme](#mistral-la-plateforme) | 10+ | 1B tokens/month | No |
+| [Gracestack Chat](#gracestack-chat) | Qwen3-32B | 10 req/day | No |
 
 ### AI-Powered IDEs with Free Pro-Grade Access
 
@@ -361,6 +362,18 @@ Phone number verification required. Models tend to be context window limited.
 **Limits (per-model):** 1 req/s, 500K tokens/min, 1B tokens/month
 
 - Open and Proprietary Mistral models (Mistral Large 3, Small 3.1, etc.)
+
+---
+
+#### [Gracestack Chat](https://tools.gracestack.se/chat.html)
+
+Free AI chat powered by Qwen3-32B on Azure A100 GPU. No signup, no credit card.
+
+**Limits:** 10 requests/day, OpenAI-compatible API
+
+- Qwen3-32B model (Alibaba's open-source 32B)
+- OpenAI-compatible API endpoint
+- Pro tier: 100 req/day (99kr/mån), Enterprise: unlimited (499kr/mån)
 
 ---
 

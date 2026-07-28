@@ -182,6 +182,7 @@ If this repo helped you build something or saved you money:
 | [RooCode](#roocode) | Bring your own keys | Unlimited (BYOK) | No |
 | [Goose](#goose) | Bring your own keys | Unlimited (BYOK) | No |
 | [OhMyPi](#ohmypi) | Bring your own keys | Unlimited (BYOK) | No |
+| [Antigravity](#antigravity) | BYOK / Local model fallback | Unlimited (BYOK / 100% Offline) | No |
 
 ### What Qualifies as "Pro-Grade"?
 
@@ -856,6 +857,16 @@ Command-line tools for AI-assisted coding in your terminal.
 - First model with session "compaction" for multi-million token deep sessions
 
 **[GitHub Repo](https://github.com/openai/codex)**
+
+---
+
+#### [Antigravity](https://github.com/google-deepmind/antigravity)
+
+**Models:** Bring your own API keys (OpenRouter, Groq) + local models (`qwen2.5-0.5b-embedded` fallback)
+- **Offline-first design**: Runs completely local or connects to cloud endpoints (such as OpenRouter or Groq).
+- **AI-Powered Data Sorting**: Auto-ingests messy, raw, lowercase brain dumps and sorts them into logical categories, subcategories, and structured spreadsheet columns/rows.
+- **Self-Correction & Lint loops**: Features tight compilation/lint integration to verify code sanity and fix compiler/linter issues iteratively.
+- **Open-source & Free**: Developed by the Advanced Agentic Coding team.
 
 ---
 

@@ -1078,6 +1078,7 @@ Professional-grade content creation with generous free tiers.
 | [Veo](https://deepmind.google/technologies/veo/) | Video | Basic Free | Cinematic clips with realistic motion and sound |
 | [Sora 2](https://openai.com/sora) (via ChatGPT) | Video | Limited free tier | Deep ChatGPT integration, high-quality video |
 | [DALL-E 4](https://openai.com/dall-e-4) (via ChatGPT) | Image | Limited free tier | Latest OpenAI image model |
+| [GPT Image 2](https://gptimage2.asia/) | Image | Free trial + paid credits | Browser-based AI image generation and editing for marketing visuals and branded content |
 | [Synthesia](https://synthesia.io) | Video Avatars | Free individual plan | "Video Agents" in 120+ languages |
 | [1 More Shot](https://onemoreshot.ai) | Music Videos | Free plan | Advanced lip-sync, frame-by-frame control |
 | [Leonardo.Ai](https://leonardo.ai) | Images | 150 tokens/day (~70 images) | Commercial use allowed |

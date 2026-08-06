@@ -677,6 +677,7 @@ General-purpose chat interfaces with free tiers.
 | [Claude](https://claude.ai) | **Claude Sonnet/Haiku** | Technical reasoning | ~30 msgs/5h |
 | [Grok](https://grok.com) | **Grok 4.2** | Aurora 2 images, voice | 15 msgs/12hr |
 | [Mistral Le Chat](https://chat.mistral.ai) | **Mistral Medium 3** | Structured output | Fewer integrations |
+| [Zicisi AI](https://zicisi.fun) | **Multi-model (DeepSeek/GPT/Claude/Doubao/Gemini)** | Chat + image gen + writing + data analysis + video | Credit-based ($1 trial) |
 
 ---
 

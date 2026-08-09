@@ -3,6 +3,30 @@ import { Tool } from "@/types";
 export const tools: Tool[] = [
   // LLM API Providers
   {
+    id: "frontman",
+    name: "Frontman",
+    category: "ide",
+    shortDescription: "Open-source visual AI agent for web apps",
+    description: "Frontman is an open-source visual AI agent for editing running web apps from the browser. It supports Next.js, Astro, and Vite apps, works with Anthropic, OpenAI, OpenRouter, and compatible providers, runs in local development, and produces normal source-code diffs. Best for visual UI changes on existing applications.",
+    website: "https://frontman.sh",
+    github: "https://github.com/frontman-ai/frontman",
+    pricing: {
+      type: "open-source",
+      freeTier: "Bring your own API keys",
+      paidTier: "Self-hosted, free",
+      creditCardRequired: false,
+    },
+    models: ["Anthropic", "OpenAI", "OpenRouter", "Compatible providers"],
+    tags: ["open-source", "visual", "byok", "nextjs", "astro", "vite", "local"],
+    deployment: "local",
+    openSource: true,
+    features: ["Visual AI agent", "Browser-based editing", "Source-code diffs", "Local development", "Multi-provider support"],
+    pros: ["Open-source core", "BYOK model support", "Visual UI changes", "Works with existing apps", "No vendor lock-in"],
+    cons: ["Requires API keys", "Best for UI changes", "Self-hosted setup"],
+    useCases: ["Visual UI changes", "Frontend development", "Rapid prototyping", "Design iterations"],
+    featured: false,
+  },
+  {
     id: "openrouter",
     name: "OpenRouter",
     category: "llm-api",

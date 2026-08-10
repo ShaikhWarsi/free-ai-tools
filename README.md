@@ -455,6 +455,7 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Hyperbolic](https://app.hyperbolic.ai/) | $1 | Permanent | DeepSeek, Llama, Qwen, GPT-OSS |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | $5 | 3 months | Llama, Qwen, DeepSeek |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 1M tokens | Permanent | DeepSeek, Llama, Mistral, Gemma |
+| [NovAI](https://aiapi-pro.com/) | $2 | Signup | OpenAI-compatible relay for Chinese models (DeepSeek, Qwen, GLM, Kimi, MiniMax) + Doubao image/video; no card required, pay-as-you-go after [verify] |
 
 ### Additional Free API Providers
 

@@ -868,6 +868,17 @@ Command-line tools for AI-assisted coding in your terminal.
 - **Self-Correction & Lint loops**: Features tight compilation/lint integration to verify code sanity and fix compiler/linter issues iteratively.
 - **Open-source & Free**: Developed by the Advanced Agentic Coding team.
 
+#### [agent-qa](https://github.com/vostride/agent-qa)
+
+**Models:** OpenAI- and Anthropic-compatible endpoints, Gemini, and local models
+- Self-hosted QA CLI and dashboard with no agent-qa usage cap
+- No credit card required when paired with local models
+- Bring your own model/provider; provider costs and rate limits apply
+- MCP server and skills for Claude Code and Codex
+- **Install:** `npm install -D agent-qa && npx agent-qa init`
+
+**[Documentation](https://vostride.com/docs/agent-qa)** | **[License](https://github.com/vostride/agent-qa/blob/main/LICENSE.md)** | **Last verified:** 2026-08-16
+
 ---
 
 ## API Providers for AI Coding Tools

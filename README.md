@@ -466,6 +466,7 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Chutes AI](https://chutes.ai) | 4 | Free community GPU-powered | `CHUTES_API_KEY` |
 | [DeepInfra](https://deepinfra.com/login) | 4 | 200 concurrent requests | `DEEPINFRA_API_KEY` |
 | [Replicate](https://replicate.com/account/api-tokens) | 2 | 6 req/min (no payment), up to 3K RPM with payment | `REPLICATE_API_TOKEN` |
+| [OpenClaw AI](https://ai.trxenergy.vip) | 7 | 50,000 sats/day/IP (no key) | (none required) |
 
 ---
 

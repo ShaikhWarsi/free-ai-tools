@@ -466,6 +466,7 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Chutes AI](https://chutes.ai) | 4 | Free community GPU-powered | `CHUTES_API_KEY` |
 | [DeepInfra](https://deepinfra.com/login) | 4 | 200 concurrent requests | `DEEPINFRA_API_KEY` |
 | [Replicate](https://replicate.com/account/api-tokens) | 2 | 6 req/min (no payment), up to 3K RPM with payment | `REPLICATE_API_TOKEN` |
+| [TeamoRouter](https://teamorouter.cn) | 4 | DeepSeek V4 Pro 200 req/day + V4 Flash 50 req/day (permanent free tier) | `OPENAI_BASE_URL` / `ANTHROPIC_BASE_URL` |
 
 ---
 
@@ -889,6 +890,14 @@ These services provide API access to coding-optimized models for tools like Curs
 - OpenAI-compatible API (works with Cursor, Continue.dev, Cline, RooCode, etc.)
 
 **[Pricing](https://www.cerebras.ai/pricing)**
+
+### [TeamoRouter](https://teamorouter.cn)
+
+- Free daily quota: DeepSeek V4 Pro **200 req/day** + DeepSeek V4 Flash **50 req/day** (permanent free tier, no credit card)
+- Models: DeepSeek V4 Pro / V4 Flash (284B MoE, 1M context), Claude & GPT series pay-as-you-go (~10-20% of official pricing)
+- OpenAI-compatible API (`https://api.teamorouter.cn/v1`) **plus native Anthropic Messages API** — Claude Code / Codex connect by just changing the base URL
+
+**[Pricing](https://teamorouter.cn/docs)**
 
 ---
 

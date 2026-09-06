@@ -183,6 +183,7 @@ If this repo helped you build something or saved you money:
 | [Goose](#goose) | Bring your own keys | Unlimited (BYOK) | No |
 | [OhMyPi](#ohmypi) | Bring your own keys | Unlimited (BYOK) | No |
 | [Antigravity](#antigravity) | BYOK / Local model fallback | Unlimited (BYOK / 100% Offline) | No |
+| [YYLO](#yylo) | Bring your own agents (Pi, Codex subagents) | Unlimited (MIT open source) | No |
 
 ### What Qualifies as "Pro-Grade"?
 
@@ -867,6 +868,17 @@ Command-line tools for AI-assisted coding in your terminal.
 - **AI-Powered Data Sorting**: Auto-ingests messy, raw, lowercase brain dumps and sorts them into logical categories, subcategories, and structured spreadsheet columns/rows.
 - **Self-Correction & Lint loops**: Features tight compilation/lint integration to verify code sanity and fix compiler/linter issues iteratively.
 - **Open-source & Free**: Developed by the Advanced Agentic Coding team.
+
+#### [YYLO](https://github.com/yylo-dev/yylo)
+
+**Models:** Bring your own coding agents — orchestrates Pi and Codex subagents (model access follows each agent's own plan and keys)
+- **Free and open source (MIT):** no paid tier, no credit card, unlimited use of the tool itself
+- **Command-line orchestrator for coding agents, repeatable workflows, and receipt-backed repository changes** with typed task, validation, merge, and release-readiness boundaries
+- **Dedicated branch/worktree per task:** `task start` freezes the protected target SHA, creates a dedicated branch/worktree, and completes dependency hydration before work begins
+- **Merge queue owns risk-based review:** risk-scaled reviewers on one frozen candidate, with hash-linked receipts and provenance for every change
+- **Install:** `npm install --global '@yylo/cli@latest'`
+
+**[GitHub](https://github.com/yylo-dev/yylo)** | **[npm](https://www.npmjs.com/package/@yylo/cli)**
 
 ---
 

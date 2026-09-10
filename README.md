@@ -1094,6 +1094,7 @@ Professional-grade content creation with generous free tiers.
 | Tool | Function | Free Tier Detail | Key Feature |
 |------|----------|------------------|-------------|
 | [Grammarly](https://grammarly.com) | Writing | 100 AI prompts/month | Rewrites and tone detection |
+| [ResumeAI](https://withresumeai.com/) | Resume / ATS | 3/day anon, 10/day free account | Free ATS checker + AI resume builder; State of ATS 2026 |
 | [LanguageTool](https://languagetool.org) | Grammar | 10,000 characters/text | 25+ languages, open-source |
 | [Fathom](https://fathom.video) | Meetings | Forever Free | Records/transcribes Zoom/Teams, auto-sync to CRM |
 | [NotebookLM](https://notebooklm.google.com) | Research | Free | Audio Overview podcasts, grounded in your documents |

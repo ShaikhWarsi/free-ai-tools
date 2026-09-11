@@ -1047,6 +1047,7 @@ Visual orchestration tools for building autonomous AI agents without coding.
 | [n8n](https://n8n.io) | Unlimited (self-hosted) | Technical teams | Self-hosted RAG systems, private data automation |
 | [Gumloop](https://gumloop.com) | 2,000 credits/month | No-code agents | Natural-language builder, "Gummie" troubleshooting agent |
 | [Relay.app](https://relay.app) | Generous free plan | Beginners | Simple agentic workflows |
+| [Taskade](https://www.taskade.com) | Free (2 workspace members) | Prompt-to-app + agents | Build apps, agents, and automations from one workspace |
 | [Activepieces](https://activepieces.com) | 1,000 tasks/month | Open-source | Flat pricing, self-hostable |
 | [Podium](https://podium.com) | Entry-level tiers | Sales/communication | 24/7 lead response AI agents |
 | [QuantFlow Pilot](https://github.com/qf-studio/pilot) | Free | Autonomous development | #1 Terminal Benchmark 2.0 — AI that ships your tickets |

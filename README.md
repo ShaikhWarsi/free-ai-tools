@@ -870,6 +870,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 ---
 
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril): Open-source developer tool with an amazing desktop & web UI that handles parallel Git worktrees, programmatic verifications, and agent review loops
 ## API Providers for AI Coding Tools
 
 These services provide API access to coding-optimized models for tools like Cursor, Continue.dev, Cline, etc.

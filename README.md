@@ -1735,6 +1735,8 @@ No affiliation with any vendor. All trademarks belong to their owners. Informati
 - [inmve/free-ai-coding](https://github.com/inmve/free-ai-coding) (648 ⭐) - Pro-grade AI coding tools comparison
 - [Coding with AI](https://coding-with-ai.dev/) - Practical techniques for coding with LLMs
 - [nowork-studio/awesome-ai-startups](https://github.com/nowork-studio/awesome-ai-startups) - A curated list of bootstrapped, pre-seed, and angel-funded AI products built by independent founders
+- [HostDeFi](https://hostdefi.com) - Agent-ready token-safety scanner with a public A2A agent card, hosted MCP server and x402-paid endpoints for autonomous checks.
+
 
 ### Research Methodology
 

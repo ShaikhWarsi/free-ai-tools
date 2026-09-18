@@ -183,6 +183,7 @@ If this repo helped you build something or saved you money:
 | [Goose](#goose) | Bring your own keys | Unlimited (BYOK) | No |
 | [OhMyPi](#ohmypi) | Bring your own keys | Unlimited (BYOK) | No |
 | [Antigravity](#antigravity) | BYOK / Local model fallback | Unlimited (BYOK / 100% Offline) | No |
+| [MySpec](https://myspec.dev) | Gemini Flash, Claude Sonnet, Cursor MCP | Free forever tier (unlimited spec interviews & 4-file bundles) | No |
 
 ### What Qualifies as "Pro-Grade"?
 
@@ -869,6 +870,16 @@ Command-line tools for AI-assisted coding in your terminal.
 - **Open-source & Free**: Developed by the Advanced Agentic Coding team.
 
 ---
+
+#### [MySpec](https://myspec.dev)
+
+- **Category:** Spec-Driven Development / Architecture / MCP Server
+- **Free Tier:** Free forever tier includes unlimited interactive requirements interviews, 4-file spec bundle generation (constitution.md, requirements.md, solution.md, tasks.md), visual Mermaid diagrams, and official MCP server for Cursor and Claude.
+- **Why it fits:** Eliminates vibe coding hallucinations and technical debt before coding begins.
+- **Credit Card Required:** No
+
+---
+
 
 ## API Providers for AI Coding Tools
 

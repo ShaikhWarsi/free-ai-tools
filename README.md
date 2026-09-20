@@ -1735,6 +1735,7 @@ No affiliation with any vendor. All trademarks belong to their owners. Informati
 - [inmve/free-ai-coding](https://github.com/inmve/free-ai-coding) (648 ⭐) - Pro-grade AI coding tools comparison
 - [Coding with AI](https://coding-with-ai.dev/) - Practical techniques for coding with LLMs
 - [nowork-studio/awesome-ai-startups](https://github.com/nowork-studio/awesome-ai-startups) - A curated list of bootstrapped, pre-seed, and angel-funded AI products built by independent founders
+- [Alca](https://alca-navy.vercel.app/en/models) - Free, read-only tracker of announced AI quota resets and limit changes across providers; every entry links to the original announcement and is marked verified or unverified
 
 ### Research Methodology
 

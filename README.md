@@ -8,6 +8,7 @@
 > **Curated list of free LLM APIs, coding copilots, AI IDEs, agents, and infrastructure tools for building real AI applications.**
 
 ### What's Inside
+- [MagicKit](https://magickit.47.80.8.174.nip.io) — **Free AI toolbox** for image generation (FLUX), text and video. No sign-up, no API key. MIT licensed. [Source](https://github.com/kaketiti/magickit)
 - ✅ Free GPT-5.5 / Claude Fable 5 / Gemini API access
 - 🤖 Coding copilots and AI-native IDEs (Cursor, Trae, Windsurf)
 - 💰 Cheapest AI APIs ($0.08-0.50 per 1M tokens)

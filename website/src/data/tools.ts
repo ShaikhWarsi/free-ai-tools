@@ -836,6 +836,33 @@ export const tools: Tool[] = [
     useCases: ["Git-centric workflows", "Multi-file changes", "Voice coding"],
     featured: true,
   },
+  {
+    id: "cortex",
+    name: "Cortex",
+    category: "cli",
+    shortDescription: "Open-source generator for API docs, SDKs, and MCP servers",
+    description: "Cortex is an open-source command-line tool that generates interactive API documentation, typed SDKs, and MCP servers from OpenAPI, AsyncAPI, GraphQL, gRPC, OpenRPC, and Markdown sources.",
+    website: "https://cortexdocs.dev",
+    github: "https://github.com/cortex-docs/cortex",
+    docs: "https://docs.cortexdocs.dev",
+    pricing: {
+      type: "open-source",
+      freeTier: "Free and open source under the MIT license",
+      paidTier: "None",
+      creditCardRequired: false,
+    },
+    models: ["Model-independent"],
+    tags: ["cli", "open-source", "mcp", "api-documentation", "sdk-generation"],
+    deployment: "local",
+    openSource: true,
+    features: ["MCP server generation", "Typed SDK generation", "Interactive API documentation", "Multiple API specification formats"],
+    pros: ["No model dependency", "No credit card required", "Supports six source formats", "MIT licensed"],
+    cons: ["Requires a supported API specification or Markdown source", "Command-line workflow"],
+    useCases: ["API documentation", "SDK generation", "MCP server generation"],
+    featured: false,
+    verified: true,
+    addedDate: "2026-09-23",
+  },
 
   // Local Models
   {

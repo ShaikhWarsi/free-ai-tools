@@ -147,6 +147,7 @@ If this repo helped you build something or saved you money:
 | [Cloudflare Workers AI](#cloudflare-workers-ai) | 47+ | 10K neurons/day | No |
 | [Cerebras](#cerebras) | 4 | 1M tokens/day | No |
 | [Mistral La Plateforme](#mistral-la-plateforme) | 10+ | 1B tokens/month | No |
+| [Requesty](#requesty) | 7 | 200 req/day | No |
 
 ### AI-Powered IDEs with Free Pro-Grade Access
 
@@ -326,6 +327,22 @@ Unified API gateway for 100+ LLMs. OpenAI and Anthropic SDK-compatible. China-fr
 **Limits:** Not published | **1 free model**
 
 - [GLM-4.7-Flash](https://ofox.ai/models/z-ai/glm-4.7-flash:free) (200K context, 128K output, $0/M input, $0/M output)
+
+---
+
+#### [Requesty](https://www.requesty.ai/free-models)
+
+LLM gateway with an OpenAI compatible API (`https://router.requesty.ai/v1`). The free plan is limited to the models priced at zero in the catalog. Free NVIDIA hosted models may use prompts for training.
+
+**Limits:** 200 requests/day shared across all free models | **7 free chat models** (September 2026)
+
+- Nemotron 3 Ultra 550B, Nemotron 3 Super 120B, Nemotron 3.5 Lightning 30B (1M context)
+- Gemma 4 31B (262K context, vision)
+- Leanstral 1.5 (262K context)
+- Nemotron 3 Nano Omni 30B Reasoning, Muse Glimmer 30B (131K context, vision)
+- No credit card required, no trial expiry
+
+**[Pricing](https://www.requesty.ai/free-models)**
 
 ---
 

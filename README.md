@@ -448,6 +448,8 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Novita](https://novita.ai/) | $0.50 | 1 year | Various open models |
 | [AI21](https://studio.ai21.com/) | $10 | 3 months | Jamba family |
 | [Upstage](https://console.upstage.ai/) | $10 | 3 months | Solar Pro/Mini |
+| [APIClaw](https://apiclaw.biz/) | 50 requests | Trial | Flat-rate OpenAI-compatible gateway for Claude, GPT, Kimi, Qwen, DeepSeek, and GLM; paid plans $19-$129/mo |
+
 | [NLP Cloud](https://nlpcloud.com/home) | $15 | Permanent | Phone verification required |
 | [Alibaba Cloud](https://bailian.console.alibabacloud.com/) | 1M tokens/model | 90 days | Qwen models |
 | [Modal](https://modal.com) | $5-30/month | Monthly | Pay by compute time |

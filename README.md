@@ -1086,6 +1086,7 @@ Professional-grade content creation with generous free tiers.
 | [Suno AI](https://suno.ai) | Music | 50 credits/day (~10 tracks) | Complete songs with vocals and instruments |
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
+| [PhotoGenerAI](https://photogenerai.com) | Image | Free credits, no sign-up | AI photo generation & editing in the browser |
 
 ---
 

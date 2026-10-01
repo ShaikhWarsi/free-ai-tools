@@ -164,6 +164,7 @@ If this repo helped you build something or saved you money:
 | [PrixAI](https://www.prixai.xyz) | Free / $10 paid plan | Free trial available | Unlimited reviews Auto-fix PRs, issue planning | No |
 | [Bito](#bito) | Free / $25 paid plans | Free trial available | AI PR reviews/Unlimited reviews | No |
 | [Sourcery](#sourcery) | ~$12/month | Free trial available | Code quality reviews | No |
+| [Manifest API Bot](https://manifest.build/api-bot/) | Free (early access) | Free for early adopters, usage limits not published [verify] | GitHub App that watches the third-party APIs your code calls and opens a PR with an LLM-written fix when one changes | [verify] |
 
 ### CLI Coding Tools with Free Pro-Grade Access
 

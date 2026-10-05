@@ -1050,6 +1050,7 @@ Visual orchestration tools for building autonomous AI agents without coding.
 | [Activepieces](https://activepieces.com) | 1,000 tasks/month | Open-source | Flat pricing, self-hostable |
 | [Podium](https://podium.com) | Entry-level tiers | Sales/communication | 24/7 lead response AI agents |
 | [QuantFlow Pilot](https://github.com/qf-studio/pilot) | Free | Autonomous development | #1 Terminal Benchmark 2.0 — AI that ships your tickets |
+| [Orbi](https://orbi.build/?ref=oss-free-ai-tools) | Free self-hosted (AGPL-3.0); Cloud: 3 merged deliveries, no credit card | Autonomous development | Labeled GitHub issue to a reviewed, merged PR and a tagged release; also runs ops tickets |
 
 ---
 

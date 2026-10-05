@@ -2049,6 +2049,29 @@ export const tools: Tool[] = [
     useCases: ["Testing", "Automation", "Scraping", "E2E"],
     featured: true,
   },
+  {
+    id: "photogenerai",
+    name: "PhotoGenerAI",
+    category: "image",
+    shortDescription: "Free AI photo generator and editor in the browser",
+    description: "PhotoGenerAI creates and edits photos with AI — text-to-image, image-to-image, enhancement and style presets. Free to try in the browser without sign-up, with paid credit packs and subscriptions for more generations.",
+    website: "https://photogenerai.com",
+    logo: "https://photogenerai.com/brand/logo-512.png",
+    pricing: {
+      type: "freemium",
+      freeTier: "Free credits, no sign-up",
+      paidTier: "Credit packs and subscriptions",
+      creditCardRequired: false,
+    },
+    tags: ["image", "photo", "editing", "free-tier", "no-signup"],
+    deployment: "api",
+    openSource: false,
+    features: ["Text-to-image", "Image-to-image", "AI photo editing", "No sign-up"],
+    pros: ["Free tier", "No credit card", "No account needed", "Browser-based"],
+    cons: ["Free tier limits", "Closed-source"],
+    useCases: ["Product photos", "Social media visuals", "Photo enhancement", "Style presets"],
+    featured: false,
+  },
 ];
 
 export function getToolById(id: string): Tool | undefined {

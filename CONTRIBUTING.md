@@ -13,6 +13,8 @@ Thank you for helping maintain this list! This guide explains how to add new too
 
 ---
 
+## Please do not submit personal projects/Slop Projects/Small projects to this list. All such PRs will be closed immediately.
+
 ## Required Information
 
 Every tool submission MUST include:

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Code, FileJson, Globe } from "lucide-react";
+import { ArrowLeft, FileJson, Globe } from "lucide-react";
 
 export default function ApiPage() {
   return (

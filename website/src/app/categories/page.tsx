@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 import { categories, getCategoryUrl } from "@/data/categories";
 import { tools } from "@/data/tools";
-import { cn } from "@/lib/utils";
 
 const iconMap: Record<string, React.ElementType> = {
   Zap,

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, FileText } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function TermsPage() {
   return (
@@ -79,7 +79,7 @@ export default function TermsPage() {
               Disclaimer
             </h2>
             <p className="text-[#737373]">
-              This directory is provided "as is" without warranties of any kind. Use listed tools at your own risk.
+              This directory is provided &quot;as is&quot; without warranties of any kind. Use listed tools at your own risk.
             </p>
           </section>
         </div>

@@ -6,17 +6,14 @@ import { motion } from "framer-motion";
 import {
   ExternalLink,
   Code2,
-  CreditCard,
   Check,
   X,
   Server,
   Cpu,
   ArrowLeft,
   Zap,
-  DollarSign,
   ChevronRight,
 } from "lucide-react";
-import { tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { getToolById } from "@/data/tools";
 import { cn, getCategoryColor } from "@/lib/utils";

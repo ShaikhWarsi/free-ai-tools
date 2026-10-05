@@ -40,7 +40,7 @@ export default function SubmitPage() {
             </li>
             <li className="flex gap-3">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#3b82f6] text-xs font-medium text-white">2</span>
-              <span>Open a new issue with the "Tool Submission" template</span>
+              <span>Open a new issue with the &quot;Tool Submission&quot; template</span>
             </li>
             <li className="flex gap-3">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#3b82f6] text-xs font-medium text-white">3</span>

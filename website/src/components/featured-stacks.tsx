@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, DollarSign, Zap, Shield, Layers, Cpu, Search, Bot } from "lucide-react";
+import { ArrowRight, DollarSign, Zap, Shield, Layers, Search, Bot } from "lucide-react";
 import { stacks } from "@/data/stacks";
 
 const stackIcons: Record<string, React.ElementType> = {

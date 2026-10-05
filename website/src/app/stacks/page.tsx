@@ -2,24 +2,10 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Layers, Zap, Shield, DollarSign, Bot, Search } from "lucide-react";
+import { ArrowRight, Layers, Zap, Shield, DollarSign } from "lucide-react";
 import { stacks } from "@/data/stacks";
-import { cn } from "@/lib/utils";
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 },
-};
 
 export default function StacksPage() {
   return (

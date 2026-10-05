@@ -3,31 +3,13 @@
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft, Grid3X3, SlidersHorizontal, X, Search } from "lucide-react";
+import { ArrowLeft, Grid3X3, X, Search } from "lucide-react";
 import { useState, useMemo } from "react";
 import { ToolCard } from "@/components/tool-card";
 import { tools } from "@/data/tools";
 import { categories, getCategoryBySlug } from "@/data/categories";
-import { cn } from "@/lib/utils";
 
-const iconMap: Record<string, React.ElementType> = {
-  Zap: ({ className }: { className?: string }) => <span className={className}>⚡</span>,
-  Code2: ({ className }: { className?: string }) => <span className={className}>💻</span>,
-  Terminal: ({ className }: { className?: string }) => <span className={className}>⌨️</span>,
-  Cpu: ({ className }: { className?: string }) => <span className={className}>🔲</span>,
-  Search: ({ className }: { className?: string }) => <span className={className}>🔍</span>,
-  Bot: ({ className }: { className?: string }) => <span className={className}>🤖</span>,
-  Mic: ({ className }: { className?: string }) => <span className={className}>🎤</span>,
-  Image: ({ className }: { className?: string }) => <span className={className}>🖼️</span>,
-  Video: ({ className }: { className?: string }) => <span className={className}>🎬</span>,
-  Database: ({ className }: { className?: string }) => <span className={className}>🗄️</span>,
-  Server: ({ className }: { className?: string }) => <span className={className}>🖥️</span>,
-  BarChart3: ({ className }: { className?: string }) => <span className={className}>📊</span>,
-  Layers: ({ className }: { className?: string }) => <span className={className}>📚</span>,
-  Workflow: ({ className }: { className?: string }) => <span className={className}>⚙️</span>,
-  Globe: ({ className }: { className?: string }) => <span className={className}>🌐</span>,
-  MessageSquare: ({ className }: { className?: string }) => <span className={className}>💬</span>,
-};
+
 
 export default function CategoryPage() {
   const params = useParams();
@@ -37,24 +19,15 @@ export default function CategoryPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
 
-  if (!category) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-[#fafafa]">
-        <div className="text-center">
-          <h1 className="text-2xl font-semibold text-[#0a0a0a]">Category not found</h1>
-          <Link
-            href="/categories"
-            className="mt-4 inline-flex items-center gap-2 text-[#3b82f6] hover:underline"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to categories
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  
 
-  const categoryTools = tools.filter((t) => t.category === category.id);
+  const categoryTools = useMemo(
+    () =>
+      category
+        ? tools.filter((t) => t.category === category.id)
+        : [],
+    [category]
+  );
 
   const filteredTools = useMemo(() => {
     return categoryTools.filter((tool) => {
@@ -88,6 +61,24 @@ export default function CategoryPage() {
       return matchesSearch && matchesFilters;
     });
   }, [categoryTools, searchQuery, selectedFilters]);
+
+if (!category) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#fafafa]">
+        <div className="text-center">
+          <h1 className="text-2xl font-semibold text-[#0a0a0a]">Category not found</h1>
+          <Link
+            href="/categories"
+            className="mt-4 inline-flex items-center gap-2 text-[#3b82f6] hover:underline"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to categories
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
 
   const toggleFilter = (filterId: string) => {
     setSelectedFilters((prev) =>

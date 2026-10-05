@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Menu, X, Zap, Layers, GitBranch } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Search, Menu, X, Zap } from "lucide-react";
 
 const navLinks = [
   { href: "/categories", label: "Categories" },

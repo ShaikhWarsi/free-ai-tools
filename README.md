@@ -373,6 +373,15 @@ Routes to various supported providers.
 
 ---
 
+#### [Bifrost](https://github.com/maximhq/bifrost)
+
+Self-hosted, open-source AI gateway for routing requests across 20+ providers through an OpenAI-compatible API.
+
+- **Models:** 20+ provider integrations through your own keys
+- **Pricing:** Apache-2.0; no hosted subscription required
+
+---
+
 #### [OpenCode Zen](https://opencode.ai/docs/zen/)
 
 AI gateway with curated models. Free models may use data for improvement.

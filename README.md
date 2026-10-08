@@ -494,6 +494,7 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Hyperbolic](https://app.hyperbolic.ai/) | $1 | Permanent | DeepSeek, Llama, Qwen, GPT-OSS |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | $5 | 3 months | Llama, Qwen, DeepSeek |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 1M tokens | Permanent | DeepSeek, Llama, Mistral, Gemma |
+| [Gonka AI Drop](https://aidrop.gnk.space/) | 100M tokens (Gonka DAHL) | One-time | DeepSeek V4-Flash, GLM-5.3-Flash, MiniMax M2.7; username-only sign-up, no card |
 | [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) | $5 credit | Monthly | Requires active Vercel account |
 
 ### Additional Free API Providers

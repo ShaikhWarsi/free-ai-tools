@@ -1252,6 +1252,7 @@ Speech-to-text and text-to-speech models comparison.
 | **OpenAI Realtime** | Audio | Audio | ~200ms | Voice agents |
 | **Deepgram Voice** | Audio | Text/Audio | ~300ms | Voice bots |
 | **AssemblyAI LeMUR** | Audio | LLM response | ~1s | Voice RAG |
+| **Bowhard Speech** | Audio/Video + Text | Text/SRT/JSON + MP3 | Async batch | Russian transcription and voiceover; 15 min + 5,000 chars free per day |
 
 ---
 

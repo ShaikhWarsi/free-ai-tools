@@ -8,14 +8,14 @@
 > **Curated list of free LLM APIs, coding copilots, AI IDEs, agents, and infrastructure tools for building real AI applications.**
 
 ### What's Inside
-- ✅ Free GPT-6 / Claude 5.5 / Gemini 3.5 API access
+- ✅ Free GPT-6 / Claude 5.5 / Gemini 3.8API access
 - 🤖 Coding copilots and AI-native IDEs (Cursor, Trae, Windsurf)
 - 💰 Cheapest AI APIs ($0.08-0.50 per 1M tokens)
 - 📚 RAG stack tools (vector DBs, embeddings, frameworks)
 - 🎯 Agent frameworks and automation tools
 - 🔒 Local models for privacy (Ollama, Llama, Qwen)
 - 🏗️ Production-ready stack configurations
-- 🆕 Claude Sonnet 5.5, Claude Opus 5.5, Haiku 5.5 — GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna — Gemini 3.5 Flash, Gemini 4 Argon — GitHub Copilot AI Credits — Windsurf Max — Trae Ultra — **OpenCode 167k⭐** — **Xiaomi MiMo V2.5 Pro**
+- 🆕 Claude Sonnet 5.5, Claude Opus 5.5, Haiku 5.5 — GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna — gemini 3.8 Flash, Gemini 4 Argon — GitHub Copilot AI Credits — Windsurf Max — Trae Ultra — **OpenCode 167k⭐** — **Xiaomi MiMo V2.5 Pro**
 
 **Goal:** Help developers build AI apps without paying $200/month.
 
@@ -25,7 +25,7 @@
 > When raising issues or pull requests please dont add your own paid, expensive personal projects.
 
 > [!WARNING]  
-> **October 2026 Model Generation Leap:** Major providers have transitioned to next-generation architectures: OpenAI introduced the GPT-6 family (GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna); Anthropic deployed the Claude 5.5 generation (Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5); Google rolled out Gemini 3.5 Flash / Flash-Lite as the default workhorse and previewed Gemini 4 Argon. The new baseline for high-throughput coding and daily development is Claude Sonnet 5.5, GPT-6.1 Sol, and Gemini 3.5 Flash, while complex multi-hour reasoning and autonomous sandboxing target GPT-6 Astra and Claude Opus 5.5.
+> **October 2026 Model Generation Leap:** Major providers have transitioned to next-generation architectures: OpenAI introduced the GPT-6 family (GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna); Anthropic deployed the Claude 5.5 generation (Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5); Google rolled out gemini 3.8 Flash / Flash-Lite as the default workhorse and previewed Gemini 4 Argon. The new baseline for high-throughput coding and daily development is Claude Sonnet 5.5, GPT-6.1 Sol, and gemini 3.8 Flash, while complex multi-hour reasoning and autonomous sandboxing target GPT-6 Astra and Claude Opus 5.5.
 >
 > **Pricing & Billing Updates:** Windsurf switched to a quota-based model (Pro $20, Teams $40, new Max $200) on Mar 18. Trae moved to a 5-tier token system (Lite $3, Pro $10, Pro+ $30, Ultra $100) on Feb 24. Qoder's launch promo ended — standard standalone pricing settled at Pro $30/mo (2,000 credits, or CNY 59/mo on Qoder CN All-in-One), Teams $40/seat (3,000 credits). Cursor split Teams into Teams Standard ($40/seat) & Teams Premium ($120/seat), credited $70 third-party usage on Pro+ ($60/mo), and shifted Bugbot to ~$1.00–$1.50/run. GitHub Copilot summer credit promotion ended Sep 1, 2026 (reverting to standard $19 / 1,900 credits for Business and $39 / 3,900 credits for Enterprise). Xiaomi MiMo V2.5 API permanent pricing schedule flattened to $1.00/1M input, $3.00/1M output, and $0.20/1M cached across all context lengths up to 1M tokens.
 
@@ -70,7 +70,7 @@ If this repo helped you build something or saved you money:
 - 🚀 **October 2026 Model Generation Leap**: Updated baseline frontier models to the latest production architectures across all tables, IDE profiles, CLI tools, and API pricing matrices:
   - **OpenAI**: GPT-6 Astra (flagship reasoning), GPT-6.1 Sol ($2.00/$10.00 per 1M, high-efficiency production agent), and GPT-6 Luna ($0.30/$1.20 per 1M lightweight tier).
   - **Anthropic**: Claude Opus 5.5 ($5/$25, deep reasoning & sandbox security), Claude Sonnet 5.5 ($2/$10, 70.6% Terminal-Bench 4.0, 30% fewer tokens/task), and Claude Haiku 5.5.
-  - **Google**: Gemini 3.5 Flash & 3.5 Flash-Lite (sub-100ms high-throughput defaults) and Gemini 4 Argon preview.
+  - **Google**: gemini 3.8 Flash & 3.5 Flash-Lite (sub-100ms high-throughput defaults) and Gemini 4 Argon preview.
   - Replaced legacy 2025/early-2026 SWE-bench benchmarks in comparison notes with Terminal-Bench 4.0, DeepSWE v1.1, and OSWorld 2.0.
 - 🧹 **Removed Fabricated & Phantom Tool Entries**:
   - Completely purged non-existent / fictitious repositories: Antigravity (`google-deepmind/antigravity`), MemoryPalace (`milla-jovovich/mempalace`), AWS Kiro (`kiro.dev`), and QuantFlow Pilot (`qf-studio/pilot`).
@@ -208,11 +208,11 @@ If this repo helped you build something or saved you money:
 
 | Tool | Pro-grade Models | Free Tier Limit | Credit Card |
 |------|------------------|-----------------|-------------|
-| [Gemini CLI](#gemini-cli) | Gemini 3.5 Flash / Flash-Lite | 1,500 req/day | No |
+| [Gemini CLI](#gemini-cli) | gemini 3.8 Flash / Flash-Lite | 1,500 req/day | No |
 | [Rovo Dev CLI](#rovo-dev-cli) | Claude Sonnet 5.5, GPT-6.1 Sol | Enterprise Cloud add-on (5M tok/day) | Paid Atlassian Cloud org required |
 | [Warp](#warp) | GPT-6.1 Sol, Claude Sonnet 5.5 | 150 credits/mo (first 2 mo), 75/mo after | No |
 | [GitHub Copilot](#github-copilot) | Claude Sonnet 5.5, GPT-6.1 Sol, GPT-6 Astra | 50 chat + 2K completions/month | No |
-| [Jules](#jules) | Gemini 3.5 Flash / Gemini 3 Pro | 15 tasks/day | No |
+| [Jules](#jules) | gemini 3.8 Flash / Gemini 3 Pro | 15 tasks/day | No |
 | [Amazon Q Developer](#amazon-q-developer) | Claude 3.5 Sonnet (AWS Bedrock) | 50 interactions/month (AWS Builder ID) | No |
 | [OpenCode](#opencode) | 75+ providers (BYOK) + Go bundle | Free (Zen) / Go $10/mo | No |
 | [Xiaomi MiMo](#xiaomi-mimo-token-plan) | MiMo-V2.5-Pro, MiMo-V2.5, MiMo-V2-Omni | Free API credits | No |
@@ -232,7 +232,7 @@ Models achieving ≥60% on SWE-bench Verified / Pro or leading agentic benchmark
 | **GPT-6.1 Sol** | Matches Astra on DeepSWE v1.1 ($2/$10) | OpenAI | Workhorse Agent |
 | Claude **Sonnet 5.5** | 70.6% Terminal-Bench 4.0 / 55.5% CursorBench 4.0 | Anthropic | High-Speed Agentic Coder |
 | **Gemini 4 Argon** | Frontier Long-Horizon (1M output tokens) | Google | Frontier Reasoning (Preview) |
-| **Gemini 3.5 Flash** | 84.2% CharXiv / High-Throughput | Google | Default Fast Workhorse |
+| **gemini 3.8 Flash** | 84.2% CharXiv / High-Throughput | Google | Default Fast Workhorse |
 | Qwen3.6-Plus | 71.2% SWE-bench | Alibaba | Premium Open-weight |
 
 > **Note:** `[verify]` indicates scores need verification from official sources. Always check current benchmarks before making decisions.
@@ -281,7 +281,7 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 | **API** | OpenRouter $10 | 1K req/day + BYOK 1M/month free |
 | **CLI** | OpenCode | Free (BYOK) or Go $10/mo |
 | **CLI** | Xiaomi MiMo Lite | $6/mo (60M credits, ~120 tasks) |
-| **CLI** | Gemini CLI | Gemini 3.5 Flash / Flash-Lite |
+| **CLI** | Gemini CLI | gemini 3.8 Flash / Flash-Lite |
 | **Local** | Ollama | Free |
 | **Embeddings** | Jina AI | Free tier |
 
@@ -375,8 +375,8 @@ Data is used for training when used outside UK/CH/EEA/EU.
 | Model | Free Tier Limits |
 |-------|------------------|
 | Gemini 3.1 Pro [verify: now paid] | 250 RPD (Tier 1) |
-| Gemini 3.5 Flash | 1,500 RPD (Primary high-throughput, low-latency) |
-| Gemini 3.5 Flash-Lite | High-throughput lightweight tier |
+| gemini 3.8 Flash | 1,500 RPD (Primary high-throughput, low-latency) |
+| gemini 3.8 Flash-Lite | High-throughput lightweight tier |
 | Gemini 3 Flash | 1,500 RPD |
 | All others | Check console |
 
@@ -714,7 +714,7 @@ General-purpose chat interfaces with free tiers.
 | Platform | Free Model | Key Capabilities | Limitations |
 |----------|------------|------------------|-------------|
 | [ChatGPT](https://chatgpt.com) | **GPT-6.1 Sol** | Sora 3, DALL-E 3, GPT Store | ~20 msgs/5hr |
-| [Gemini](https://gemini.google.com) | **Gemini 3.5 Flash** | 2M Context, **20 Deep Research/mo** | Research quota |
+| [Gemini](https://gemini.google.com) | **gemini 3.8 Flash** | 2M Context, **20 Deep Research/mo** | Research quota |
 | [Claude](https://claude.ai) | **Claude Sonnet 5.5 / Haiku 5.5** | Technical reasoning | ~30 msgs/5h |
 | [Grok](https://grok.com) | **Grok 4.2** | Aurora 2 images, voice | 15 msgs/12hr |
 | [Mistral Le Chat](https://chat.mistral.ai) | **Mistral Medium 3** | Structured output | Fewer integrations |
@@ -729,10 +729,10 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Gemini CLI](https://aistudio.google.com/)
 
-**Models:** Gemini 3.5 Flash, Gemini 3.5 Flash-Lite, Gemini 3 Flash
-- Gemini 3.5 Flash is the default high-throughput model (1,500 req/day on AI Studio free tier)
-- Gemini 3.5 Flash-Lite provides ultra low-latency CLI completions
-- 1,500 requests/day for Gemini 3.5 Flash / Gemini 3 Flash
+**Models:** gemini 3.8 Flash, gemini 3.8 Flash-Lite, Gemini 3 Flash
+- gemini 3.8 Flash is the default high-throughput model (1,500 req/day on AI Studio free tier)
+- gemini 3.8 Flash-Lite provides ultra low-latency CLI completions
+- 1,500 requests/day for gemini 3.8 Flash / Gemini 3 Flash
 - No credit card required for free tier
 - MCP server support, Google Search grounding
 - **Install:** `npm install -g @google/gemini-cli`
@@ -760,7 +760,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Warp](https://www.warp.dev/)
 
-**Models:** GPT-6.1 Sol, Claude Sonnet 5.5, Gemini 3.5 Flash
+**Models:** GPT-6.1 Sol, Claude Sonnet 5.5, gemini 3.8 Flash
 - 150 AI credits/month (first 2 months), then 75 AI credits/month
 - No credit card required for basic signup
 - AI-powered terminal with code generation
@@ -817,7 +817,7 @@ Command-line tools for AI-assisted coding in your terminal.
 
 #### [Jules](https://jules.google/)
 
-**Model:** Gemini 3.5 Flash / Gemini 3 Pro (upgraded from 2.5 Pro)
+**Model:** gemini 3.8 Flash / Gemini 3 Pro (upgraded from 2.5 Pro)
 - 15 tasks/day free tier
 - 3 concurrent tasks
 - Rolling 24-hour window reset
@@ -1023,7 +1023,7 @@ free-coding-models --tier S --json | jq -r '.[0].modelId'
 | Tier | SWE-bench | Best For |
 |------|-----------|----------|
 | **S+** | ≥75% | **Claude Opus 5.5, GPT-6 Astra, GPT-6.1 Sol, Claude Sonnet 5.5** |
-| **S** | 65-75% | **Qwen3.6-Plus (71.2%), Gemini 3.5 Flash, DeepSeek-V4-Flash** |
+| **S** | 65-75% | **Qwen3.6-Plus (71.2%), gemini 3.8 Flash, DeepSeek-V4-Flash** |
 | **A+/A** | 40–60% | Solid alternatives |
 | **A-/B+** | 30–40% | Smaller tasks |
 | **B/C** | < 30% | Code completion |
@@ -1057,7 +1057,7 @@ All 271 models allow **commercial use of generated output**. You own what the mo
 ## Comparison Notes
 
 - **Goal**: Compare AI coding tools by their access to pro-grade models and free tier limits.
-- **What qualifies a model as "pro-grade"?** Models must achieve ≥60% on SWE-bench Verified / Pro or leading agentic benchmarks (Terminal-Bench 4.0, DeepSWE v1.1), demonstrating real-world software engineering capability. Current qualifying October 2026 models: Claude Opus 5.5 (Flagship Enterprise reasoning, multi-hour sandboxing & prompt-injection defense), GPT-6 Astra (Autonomous Agentic Flagship / Computer Operator), GPT-6.1 Sol (matches Astra on DeepSWE v1.1, leads OSWorld 2.0 & Terminal-Bench Science), Claude Sonnet 5.5 (70.6% Terminal-Bench 4.0, 55.5% CursorBench 4.0, 30% fewer tokens/task), Gemini 4 Argon (Frontier Long-Horizon with 1M output tokens), Gemini 3.5 Flash (84.2% CharXiv), and Qwen3.6-Plus (71.2%).
+- **What qualifies a model as "pro-grade"?** Models must achieve ≥60% on SWE-bench Verified / Pro or leading agentic benchmarks (Terminal-Bench 4.0, DeepSWE v1.1), demonstrating real-world software engineering capability. Current qualifying October 2026 models: Claude Opus 5.5 (Flagship Enterprise reasoning, multi-hour sandboxing & prompt-injection defense), GPT-6 Astra (Autonomous Agentic Flagship / Computer Operator), GPT-6.1 Sol (matches Astra on DeepSWE v1.1, leads OSWorld 2.0 & Terminal-Bench Science), Claude Sonnet 5.5 (70.6% Terminal-Bench 4.0, 55.5% CursorBench 4.0, 30% fewer tokens/task), Gemini 4 Argon (Frontier Long-Horizon with 1M output tokens), gemini 3.8 Flash (84.2% CharXiv), and Qwen3.6-Plus (71.2%).
 - **`[verify]` tag**: Indicates information needs verification from official sources. Pricing, limits, and model availability change frequently.
 - **Different limit types**: Tools use various quota systems - requests, tokens, credits, chats - making direct comparison challenging. Check documentation for specifics.
 - **Real-world usage**: Actual consumption varies dramatically based on coding style, task complexity, and tool implementation.
@@ -1470,7 +1470,7 @@ Image Input → Vision LLM → Structured Output
 ```
 
 **Stack:**
-- Vision: GPT-6.1 Sol Vision, Claude Sonnet 5.5, or Gemini 3.5 Flash
+- Vision: GPT-6.1 Sol Vision, Claude Sonnet 5.5, or gemini 3.8 Flash
 - Structured output: Instructor + Pydantic
 - Storage: Postgres JSONB or MongoDB
 
@@ -1500,7 +1500,7 @@ API pricing for budget planning. Sorted by input cost.
 |-------|----------|-------|--------|-----------|----------|
 | **MiniMax M2.5** | MiniMax | $0.08 | $0.12 | - | Bulk generation |
 | **DeepSeek V4** | DeepSeek | $0.28 | $0.55 | $0.03 🎯 | Coding, cached |
-| **Gemini 3.5 Flash** | Google | $0.25 | $0.75 | $0.05 🎯 | High throughput, 1M+ context |
+| **gemini 3.8 Flash** | Google | $0.25 | $0.75 | $0.05 🎯 | High throughput, 1M+ context |
 | **GPT-6 Luna** | OpenAI | $0.30 | $1.20 | - | Efficient lightweight reasoning |
 | **GLM 4.9 Air** | ZAI | $0.35 | $0.75 | - | Chinese/English |
 | **Qwen3-Coder** | Alibaba | ~$0.60 | ~$1.20 | - | Strong agent tasks |
@@ -1545,7 +1545,7 @@ Don't just use SWE-bench - match models to your specific task.
 
 | Model | Why | Cost per 1M |
 |-------|-----|---------------|
-| **Gemini 3.5 Flash / Flash-Lite** | Primary high-throughput, low-latency models on Google AI Studio ($0.25/$0.75) | 1,500 RPD free |
+| **gemini 3.8 Flash / Flash-Lite** | Primary high-throughput, low-latency models on Google AI Studio ($0.25/$0.75) | 1,500 RPD free |
 | **GPT-6 Luna** | High-efficiency lightweight OpenAI model ($0.30/$1.20) | API |
 | **MiniMax M2.5** | **80.2%** SWE-bench, dirt cheap | $0.08/$0.12 |
 | **GLM 4.5 Air** | Good quality, extremely cheap | ~$0.40/$0.80 |
@@ -1563,7 +1563,7 @@ Don't just use SWE-bench - match models to your specific task.
 
 | Model | Why | Free Tier |
 |-------|-----|-----------|
-| **Gemini 3.5 Flash Vision** | Leads CharXiv chart reasoning at 84.2%, 1M+ multimodal context | Google AI Studio (1,500 RPD) |
+| **gemini 3.8 Flash Vision** | Leads CharXiv chart reasoning at 84.2%, 1M+ multimodal context | Google AI Studio (1,500 RPD) |
 | **Claude 5.5 Vision** | Exceptional technical diagram, UI, and document analysis | Claude Free / API |
 | **GPT-4o** | Fast multimodal generation and OCR | ChatGPT Free |
 | **Qwen2.5 VL** | Strong open vision model | Various |
@@ -1596,9 +1596,9 @@ Critical for scaling applications. Plan your architecture.
 | App Type | Recommended Stack |
 |----------|-------------------|
 | **Document QA / Study App** | Cerebras (Qwen3.6-Plus) + Groq |
-| **AI Reel Generator** | Gemini 3.5 Flash (video) + Groq (audio) |
+| **AI Reel Generator** | gemini 3.8 Flash (video) + Groq (audio) |
 | **Trading AI** | Groq + local Qwen3.6-Plus |
-| **Chatbot** | OpenRouter + Gemini 3.5 Flash (cheap) |
+| **Chatbot** | OpenRouter + gemini 3.8 Flash (cheap) |
 | **Code Review Bot** | DeepSeek V4 (cheap) + Claude Sonnet 5.5 (quality) |
 
 ---

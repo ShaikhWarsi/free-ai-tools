@@ -1088,6 +1088,7 @@ Visual orchestration tools for building autonomous AI agents without coding.
 | [Relay.app](https://relay.app) | Generous free plan | Beginners | Simple agentic workflows |
 | [Activepieces](https://activepieces.com) | 1,000 tasks/month | Open-source | Flat pricing, self-hostable |
 | [Podium](https://podium.com) | Entry-level tiers | Sales/communication | 24/7 lead response AI agents |
+| [Latchkey](https://latchkey.dev) | 30-day trial, no card; open-source projects free (6,000 runner min/month, apply at latchkey.dev/open-source) | CI for coding agents | Self-healing GitHub Actions runners, CLI `latchkey run`, MCP server with failure bundles and `run_job` |
 
 ---
 

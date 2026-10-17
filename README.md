@@ -1318,6 +1318,7 @@ Tools for AI agents to control browsers - web scraping, form filling, testing.
 |------|------|---------|----------|
 | **Browserbase** | Managed browsers | $5 free tier | Production agents |
 | **Steel.dev** | Browser API | Free tier | AI-native browser control |
+| **[Browser Use](https://browser-use.com)** | Agent library + managed browsers | Open source (MIT); cloud: $1 one-time credit for Google/GitHub/Microsoft signups, no card | AI agents over CDP |
 | **Stagehand** | AI browser framework | Open source | Next-gen Playwright |
 | **Playwright** | Browser automation | Free | Reliable, well-documented |
 | **Puppeteer** | Chrome automation | Free | Chrome-specific |

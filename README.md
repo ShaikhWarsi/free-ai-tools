@@ -339,6 +339,20 @@ Ready-made combinations for different use cases. Copy-paste these configurations
 
 ### Fully Free Providers
 
+#### [NovAI](https://aiapi-pro.com)
+
+**Free tier:** 5 permanently free models — no credit charge (10 calls/day on the free tier; no card, no expiry). Full-speed unlimited after the first top-up.
+
+- [glm-4.7-flash](https://aiapi-pro.com/models/glm-4.7-flash.html) — general chat, Chinese + English
+- [glm-4.6v-flash](https://aiapi-pro.com/models/glm-4.6v-flash.html) — vision / image understanding
+- [glm-4.1v-thinking-flash](https://aiapi-pro.com/models/glm-4.1v-thinking-flash.html) — vision with reasoning
+- [cogview-3-flash](https://aiapi-pro.com/models/cogview-3-flash.html) — image generation
+- [cogvideox-flash](https://aiapi-pro.com/models/cogvideox-flash.html) — video generation
+
+OpenAI-compatible endpoint (https://aiapi-pro.com/v1) also aggregating 110+ paid Chinese frontier models (DeepSeek, Qwen, GLM, Kimi, Seedance) at 0% platform markup. Measured uptime & incident history: https://aiapi-pro.com/status.html
+
+---
+
 #### [OpenRouter](https://openrouter.ai)
 
 **Limits:** 20 RPM, **29 free models** (262K context max, March 2026), models share quota

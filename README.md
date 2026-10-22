@@ -1769,6 +1769,7 @@ No affiliation with any vendor. All trademarks belong to their owners. Informati
 - [inmve/free-ai-coding](https://github.com/inmve/free-ai-coding) (648 ⭐) - Pro-grade AI coding tools comparison
 - [Coding with AI](https://coding-with-ai.dev/) - Practical techniques for coding with LLMs
 - [nowork-studio/awesome-ai-startups](https://github.com/nowork-studio/awesome-ai-startups) - A curated list of bootstrapped, pre-seed, and angel-funded AI products built by independent founders
+- [forkalt](https://forkalt.com) - Directory of open-source and free alternatives to paid AI and pro software, with side-by-side model comparisons
 
 ### Research Methodology
 

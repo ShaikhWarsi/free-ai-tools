@@ -16,7 +16,13 @@ export type ToolCategory =
   | "browser"
   | "chat-platform";
 
-export type PricingType = "free" | "freemium" | "paid" | "open-source";
+export type PricingType =
+  | "free"
+  | "freemium"
+  | "paid"
+  | "open-source"
+  | "commercial"
+  | "deprecated";
 
 export type DeploymentType = "api" | "local" | "hybrid";
 

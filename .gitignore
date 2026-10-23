@@ -1,0 +1,49 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+website/.next/
+out/
+next-env.d.ts.timestamp
+
+# testing
+coverage/
+
+# typescript
+*.tsbuildinfo
+
+# production
+build/
+dist/
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# editor/backup droppings
+*.bak
+*.bak.*
+
+# env files (never commit secrets)
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# agent tooling — machine-local notes, not part of the public site
+.projectmem/

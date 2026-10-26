@@ -1119,6 +1119,12 @@ Professional-grade content creation with generous free tiers.
 | [Synthesia](https://synthesia.io) | Video Avatars | Free individual plan | "Video Agents" in 120+ languages |
 | [1 More Shot](https://onemoreshot.ai) | Music Videos | Free plan | Advanced lip-sync, frame-by-frame control |
 | [Leonardo.Ai](https://leonardo.ai) | Images | 150 tokens/day (~8–15 images) | Commercial use allowed |
+| [PromptImage](https://promptimage.cloud) | Image / Video | Signup credits, no card | Free AI image & video studio with prompt library |
+| [TeslaWraps](https://teslawraps.design) | Design / Mockup | Core editing free, no account | Browser Tesla Paint Shop wrap editor with PNG export |
+| [GrokVideo Studio](https://grokvideogenerator.dev) | Video | Free trial credits | Independent Grok Imagine text/image-to-video (not affiliated with xAI/X) |
+| [Alors On Danse Video Maker](https://alorsondansevideo.com) | Video | Paid | Independent AI: two photos → 13s studio dance video (Paid; not affiliated with Stromae/TikTok) |
+| [Bad Times AI](https://badtimesai.dev) | Video | Paid | Independent AI dance effect: one photo → 14–15s portrait dance video (Paid from $7.99) |
+| [I Found You in the Crowd AI](https://ifoundyouinthecrowdai.com) | Video | Paid | Independent AI scene effect: two photos → balcony/spotlight meeting video (Paid from $7.99) |
 | [Recraft AI](https://recraft.ai) | Vector/SVG | 30 credits/day | Infinitely scalable icons and logos |
 | [Ideogram](https://ideogram.ai) | Images | 10-20 prompts/day | Perfect text rendering, "Magic Prompt" |
 | [Suno AI](https://suno.ai) | Music | 50 credits/day (~10 tracks) | Complete songs with vocals and instruments |

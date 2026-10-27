@@ -1693,6 +1693,7 @@ Scale beyond free tiers.
 | **Beam.cloud** | Serverless | Per request | Spiky traffic |
 | **Baseten** | Model serving | $30 credits | Production models |
 | **Replicate** | Model hosting | 6 req/min free | Quick deployment |
+| **Light Cloud** | App hosting (PaaS) | $1/month usage free, from $5/month | AI app backends and APIs |
 
 ### Serverless Inference (Pay-per-use)
 

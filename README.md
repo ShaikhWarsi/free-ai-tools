@@ -1113,6 +1113,7 @@ Professional-grade content creation with generous free tiers.
 
 | Tool | Output | Free Tier | Key Capability |
 |------|--------|-----------|----------------|
+| [HelpMyIMG](https://helpmyimg.com/) | Image / Editing | 100% Free Forever | In-browser AI background removal, smart compression, resize & metadata cleaner (runs locally, zero upload) |
 | [Veo](https://deepmind.google/technologies/veo/) | Video | Basic Free | Cinematic clips with realistic motion and sound |
 | [Sora 3](https://openai.com/sora) (via ChatGPT) | Video | Limited free tier | Deep ChatGPT integration, high-quality video |
 | [DALL-E 3](https://openai.com/index/dall-e-3/) (via ChatGPT) | Image | Limited free tier | High-detail image generation |

@@ -1786,3 +1786,5 @@ MIT © [ShaikhWarsi](https://github.com/ShaikhWarsi)
 ---
 
 *Last updated: October 5, 2026 • PRs/issues welcome*
+
+- [AIToolNotes](https://aitoolnotes.blogspot.com) - Curated directory of free AI tools with detailed comparisons and guides for students, marketers, developers, and businesses.

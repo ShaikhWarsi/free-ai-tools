@@ -1125,6 +1125,7 @@ Professional-grade content creation with generous free tiers.
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
 | [PhotoGenerAI](https://photogenerai.com) | Image | Free credits, no sign-up | AI photo generation & editing in the browser |
+| [Seedance Now](https://seedancenow.com/) | Video | 5 free credits on signup | Multi-model text/image-to-video (Seedance 2.5, Kling 4.0, Wan 3.0) |
 
 ---
 

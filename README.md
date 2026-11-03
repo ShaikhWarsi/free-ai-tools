@@ -1125,6 +1125,7 @@ Professional-grade content creation with generous free tiers.
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
 | [PhotoGenerAI](https://photogenerai.com) | Image | Free credits, no sign-up | AI photo generation & editing in the browser |
+| [MakeImg](https://makeimg.ai/) | Image | Free daily credits | Text-to-image and reference-photo edits across 11 models |
 
 ---
 

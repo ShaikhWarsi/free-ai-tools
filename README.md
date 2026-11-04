@@ -1139,6 +1139,7 @@ Professional-grade content creation with generous free tiers.
 | [Humata](https://humata.ai) | PDF Analysis | 60 pages/month | Clickable source citations |
 | [QuillBot](https://quillbot.com) | Rewriting | 125 words/time | Fluency & Standard modes |
 | [DeepL](https://deepl.com) | Translation | Basic Free | Incognito sensitive mode |
+| [Coda One](https://www.codaone.ai/) | AI detection & writing | AI detector unlimited, no signup; writing tools 3 runs/day | Highlights AI-sounding phrases; humanizer, rewriter, grammar checker |
 
 ---
 

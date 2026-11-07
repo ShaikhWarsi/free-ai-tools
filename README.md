@@ -929,6 +929,16 @@ These services provide API access to coding-optimized models for tools like Curs
 
 **[Pricing](https://www.cerebras.ai/pricing)**
 
+### [Inferaft](https://inferaft.com/)
+
+- **3,000,000 free GLM-5.3 Flash tokens on signup** (first 300 new accounts, one-time, no credit card); +3,000,000 per referral (up to 5 friends)
+- Models: Kimi K3, GLM-5.3, GLM-5.3 Flash, DeepSeek V4 Pro / V4.1 Flash, Qwen3.8-27B, Gemma 4 31B
+- One key + one base URL for Claude Code, Codex, OpenCode, Cline, Cursor
+- OpenAI-compatible (`https://inferaft.com/v1`) and Anthropic Messages-compatible (`https://inferaft.com`)
+- Paid plans from $10/mo; $5 ticket = 72h unlimited GLM-5.3 Flash
+
+**[Pricing](https://inferaft.com/pricing)**
+
 ---
 
 ## Paid Tiers Comparison

@@ -413,6 +413,20 @@ Self-hosted, open-source AI gateway for routing requests across 20+ providers th
 
 ---
 
+#### [SandBase CLI](https://github.com/sandbaseai/cli)
+
+Apache-2.0 CLI and local MCP server connecting Cursor, Claude Code, Codex, OpenCode, and other agents to 2,000+ models/APIs through one OpenAI-compatible interface.
+
+- **Models:** 2,000+ models/APIs in the SandBase catalog (BYOK + hosted); per-model rates apply
+- **Limits:** Start plan $0 with starter credits; 100 free data-API calls/day per org; catalog/discovery $0; pay-per-call after credits (no subscription)
+- No credit card required to start
+- **Install:** `npx -y @sandbaseai/cli@latest connect`
+- Remote MCP: `https://sandbase.ai/v1/mcp` (API Key)
+
+**[Pricing](https://sandbase.ai/pricing)** | **[Docs](https://sandbaseai.github.io/cli/)** | **Last verified:** 2026-11-08
+
+---
+
 #### [OpenCode Zen](https://opencode.ai/docs/zen/)
 
 AI gateway with curated models. Free models may use data for improvement.

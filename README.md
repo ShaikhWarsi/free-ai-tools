@@ -506,6 +506,7 @@ AI gateway with curated models. Free models may use data for improvement.
 | [Chutes AI](https://chutes.ai) | 4 | Free community GPU-powered | `CHUTES_API_KEY` |
 | [DeepInfra](https://deepinfra.com/login) | 4 | 200 concurrent requests | `DEEPINFRA_API_KEY` |
 | [Replicate](https://replicate.com/account/api-tokens) | 2 | 6 req/min (no payment), up to 3K RPM with payment | `REPLICATE_API_TOKEN` |
+| [cheapllm.shop](https://cheapllm.shop) | 1 (DeepSeek V4.1 Flash 1017) | [Free, no rate limit during the beta; then a permanent free tier of 5K input + 1K output tokens/hour](https://cheapllm.shop/docs#free-tier) | `CHEAPLLM_API_KEY` |
 
 ---
 

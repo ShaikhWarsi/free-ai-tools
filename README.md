@@ -1766,6 +1766,7 @@ No affiliation with any vendor. All trademarks belong to their owners. Informati
 
 - [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) (18.4k ⭐) - Comprehensive free LLM API list
 - [mnfst/awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis) (2.1k ⭐) - Permanent free LLM API tiers
+- [AIHOT Token 羊毛](https://aihot.news/free-tokens) - Chinese-language guide to free AI allowances, with eligibility, expiry dates, last-checked dates, and official sources.
 - [inmve/free-ai-coding](https://github.com/inmve/free-ai-coding) (648 ⭐) - Pro-grade AI coding tools comparison
 - [Coding with AI](https://coding-with-ai.dev/) - Practical techniques for coding with LLMs
 - [nowork-studio/awesome-ai-startups](https://github.com/nowork-studio/awesome-ai-startups) - A curated list of bootstrapped, pre-seed, and angel-funded AI products built by independent founders

@@ -1102,6 +1102,7 @@ AI-powered tools for conversational data analysis and narrative visualization.
 | [Flourish](https://flourish.studio) | Data Storytelling | No-code interactive maps, "scrollytelling" features |
 | [Datawrapper](https://datawrapper.de) | Publishing | Publish-ready charts in seconds, journalism-focused |
 | [Looker Studio](https://lookerstudio.google.com) | Marketing Data | Seamless Google Analytics/Ads integration |
+| [No Stairs Please](https://nostairsplease.com/) | Live-Music Venue Data & MCP | Free US & BC venue search + public [MCP server](https://nostairsplease.com/mcp) | Accessibility, load-in & tour-routing data |
 | [Power BI Desktop](https://powerbi.microsoft.com) | Microsoft reports | Copilot recommendations, local report building |
 | [AI for Database](https://aifordatabase.com) | Natural language DB queries | Freemium - free tier available | Connect any DB (PostgreSQL, MySQL, MongoDB) and query in plain English — no SQL needed, with self-refreshing dashboards and workflow automation |
 

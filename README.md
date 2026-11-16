@@ -1147,6 +1147,7 @@ Professional-grade content creation with generous free tiers.
 | [Humata](https://humata.ai) | PDF Analysis | 60 pages/month | Clickable source citations |
 | [QuillBot](https://quillbot.com) | Rewriting | 125 words/time | Fluency & Standard modes |
 | [DeepL](https://deepl.com) | Translation | Basic Free | Incognito sensitive mode |
+| [HumanPen](https://humanpen.net) | Writing & Research | 100 signup credits | Document-level humanize, 12-language translate, condense, citation correction & research projects |
 
 ---
 

@@ -1105,6 +1105,14 @@ AI-powered tools for conversational data analysis and narrative visualization.
 | [Power BI Desktop](https://powerbi.microsoft.com) | Microsoft reports | Copilot recommendations, local report building |
 | [AI for Database](https://aifordatabase.com) | Natural language DB queries | Freemium - free tier available | Connect any DB (PostgreSQL, MySQL, MongoDB) and query in plain English — no SQL needed, with self-refreshing dashboards and workflow automation |
 
+
+---
+
+### Writing & Document Tools
+
+| Tool | Free Tier Details | Credit Card Required? | Key Features | Pricing | Last Verified |
+|------|-------------------|-----------------------|--------------|---------|---------------|
+| [HumanPen](https://humanpen.net/) | 100 signup credits for new accounts | No | Document-level Humanize (DOCX/PPTX/TXT), Condense (DOCX word-budget), Citation Format Correction (12 styles), Translate (12 languages) | [Credit-based](https://humanpen.net/) | 2026-11-16 |
 ---
 
 ### Creative & Multimedia Tools

@@ -909,6 +909,23 @@ Amazon's generative AI-powered assistant for software development (evolved from 
 
 ---
 
+#### [Mel](https://www.openmel.dev)
+
+**Models:** Claude, GPT, Gemini, DeepSeek, Qwen, Kimi, GLM (auto mode picks per task, or pin one; cross-provider fallback)
+- Free download; the agent is free on your own provider key (provider usage charges apply)
+- No credit card required for the free BYOK tier [verify]
+- Agentic terminal: a lead agent spawns worker agents in their own panes, with configurable approvals for writes, edits and commands
+- macOS (Apple Silicon & Intel), Windows 10/11 (x64 + ARM64), Linux; VS Code extension (`code --install-extension Mel.openmel`)
+- MCP support, SSH remote agents, skills, project memory
+- **Pro ($20/mo):** hosted credits across the supported providers
+- **Max ($200/mo):** larger hosted-credit allowance
+- **Business ($50/seat/mo, from 2 seats):** shared credit balance, US model providers only
+- Proprietary (not open source; open source is planned)
+
+**[Pricing](https://www.openmel.dev/pricing)** | **[Documentation](https://www.openmel.dev)** | **Last verified:** 2026-11-17
+
+---
+
 ## API Providers for AI Coding Tools
 
 These services provide API access to coding-optimized models for tools like Cursor, Continue.dev, Cline, etc.

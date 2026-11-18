@@ -1690,6 +1690,7 @@ Scale beyond free tiers.
 | **RunPod** | GPU Cloud | $0.20-0.50/hr | Training, fine-tuning |
 | **Vast.ai** | Spot GPUs | Cheap spot prices | Budget inference |
 | **Lambda Labs** | GPU Cloud | ~$0.60/hr A100 | Stable workloads |
+| **Lium** | GPU Marketplace | Per-second billing, provider-set prices ([live feed](https://lium.io/pricing.json)) | RTX 4090/5090 to H100/H200/B200/B300 |
 | **Beam.cloud** | Serverless | Per request | Spiky traffic |
 | **Baseten** | Model serving | $30 credits | Production models |
 | **Replicate** | Model hosting | 6 req/min free | Quick deployment |

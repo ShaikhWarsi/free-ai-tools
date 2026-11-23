@@ -1113,6 +1113,7 @@ Professional-grade content creation with generous free tiers.
 
 | Tool | Output | Free Tier | Key Capability |
 |------|--------|-----------|----------------|
+| [Free Image to Video](https://freeimagetovideo.ai/) | Video | Start with no sign-up; no daily cap on free account | Image-to-video & text-to-video with synchronized sound and no watermark |
 | [Veo](https://deepmind.google/technologies/veo/) | Video | Basic Free | Cinematic clips with realistic motion and sound |
 | [Sora 3](https://openai.com/sora) (via ChatGPT) | Video | Limited free tier | Deep ChatGPT integration, high-quality video |
 | [DALL-E 3](https://openai.com/index/dall-e-3/) (via ChatGPT) | Image | Limited free tier | High-detail image generation |

@@ -1125,6 +1125,7 @@ Professional-grade content creation with generous free tiers.
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
 | [PhotoGenerAI](https://photogenerai.com) | Image | Free credits, no sign-up | AI photo generation & editing in the browser |
+| [Kavel](https://www.kavel.ai/) | Video & Images | Free without account or card | Kavel is a free AI video generator and AI image generator — 4K clips with sound, and images you can run without an account or a card. |
 
 ---
 

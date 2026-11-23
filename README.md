@@ -1125,6 +1125,7 @@ Professional-grade content creation with generous free tiers.
 | [ElevenLabs](https://elevenlabs.io) | Voice | Basic Free | Realistic voice cloning |
 | [Canva AI](https://canva.com) | Design | Robust free tier | AI design assets, brochures, short videos |
 | [PhotoGenerAI](https://photogenerai.com) | Image | Free credits, no sign-up | AI photo generation & editing in the browser |
+| [SVGMaker](https://svgmaker.io) | Vector/SVG | 6 credits at sign-up, then 3 credits/day; downloads need a paid plan | AI SVG generation, image to SVG conversion and an SVG editor |
 
 ---
 

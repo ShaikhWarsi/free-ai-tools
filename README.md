@@ -1171,6 +1171,7 @@ Professional-grade content creation with generous free tiers.
 | [Surfer SEO](https://surferseo.com) | Content optimization |
 | [Jasper](https://jasper.ai) | AI copywriting with brand voice |
 | [Writesonic](https://writesonic.com) | Scalable copywriting |
+| [Hermoso](https://hermoso.ai) | Marketing tools for AI agents (MCP, CLI or API): competitor ad research, image and video ads, social post scheduling and paid campaigns |
 
 ---
 
